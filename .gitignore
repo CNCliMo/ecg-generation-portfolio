@@ -1,0 +1,52 @@
+# Portfolio repo hygiene: never commit environments, data, checkpoints or large arrays.
+# The repository should be reproducible from code + public datasets.
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+*.log
+
+# Environments (5GB isolated venv, legacy dirs)
+.venv*/
+.deps/
+env/
+
+# Data / caches (downloadable or regenerable; see README data section)
+data/
+preprocess/cache/
+preprocess/cache_v3/
+
+# Model checkpoints (large binary; distributed separately / via release)
+models/checkpoints/
+models/checkpoints_v3/
+*.pt
+*.pth
+*.ckpt
+
+# Generated signals and intermediate results (regenerable; figures ARE committed)
+results/generated/
+results/generated_8k/
+results_v3/generated/
+results/logs/
+*.npz
+*.npy
+*.parquet
+
+# Local scratch / evaluation packets / OS files
+.tmp/
+review_packets/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.tmp
+*.part
+
+# Keep the small committed sample signals (not the full generated sets)
+!samples/*.npz
+!samples/*.md
+.local_archive/
+deepseek_markdown_*.md

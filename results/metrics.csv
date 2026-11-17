@@ -1,0 +1,818 @@
+route,metric_group,metric,param,domain,value,ks_stat,ks_p,n,note
+A,consistency,classifier_fid,,in_domain,139.07776105996865,,,1000,Fréchet distance in 768-d classifier features (lower better)
+A,consistency,coverage,,in_domain,0.963855421686747,,,1000,k-NN coverage of real manifold
+A,consistency,hr_bias,,in_domain,0.0911043173856256,,,500,
+A,consistency,hr_mae,,in_domain,0.5711252104903588,,,500,detected HR vs requested HR (bpm)
+A,consistency,hr_pearson,,in_domain,0.9990017270481558,,,500,
+A,consistency,hr_within_10bpm,,in_domain,1.0,,,500,
+A,consistency,hr_within_5bpm,,in_domain,1.0,,,500,
+A,consistency,lead_residual_mean,,in_domain,0.20848933499679198,,,500,"affine residual of III/aVR/aVL/aVF given I,II"
+A,consistency,lead_residual_wasserstein,,in_domain,0.20356862127264969,,,500,vs real test residual distribution
+A,consistency,nn_dist_real_real,,in_domain,37.089182295203884,,,2158,reference
+A,consistency,nn_dist_synth_real,,in_domain,43.18669727297154,,,1000,
+A,consistency,precision_knn,,in_domain,0.712,,,1000,fraction inside real manifold (95th pct)
+A,downstream,tstr_macro_f1,,in_domain,,,,0,not_applicable: route is not label-conditioned
+A,functional,conditional_consistency,,in_domain,,,,0,not_applicable: route has no diagnostic-label conditioning
+A,functional,unconditional_class_KL,all5,in_domain,3.582602084507573,,,1000,
+A,morphology,dtw,,in_domain,10.986635073548193,,,500,
+A,morphology,fd,,in_domain,28.748248838230012,,,500,
+A,morphology,heart_rate,,in_domain,0.016982326133318747,,,500,
+A,morphology,mmd,,in_domain,0.002622713645299276,,,500,
+A,morphology,nn_dist,,in_domain,2.1882976392904916,,,500,
+A,morphology,pr_dist,,in_domain,0.1902435899842965,,,500,
+A,morphology,prd,,in_domain,130.24279276529947,,,500,
+A,morphology,psd,,in_domain,0.03451011257928483,,,500,
+A,morphology,spectral_entropy,,in_domain,0.2649367071710743,,,500,
+A,morphology,swd,,in_domain,0.8842197539949531,,,500,
+A,regularity,delta_wasserstein,PR_ms,delta,8.93276194686019,,,500,
+A,regularity,delta_wasserstein,QRS_ms,delta,-0.8366159143433087,,,500,
+A,regularity,delta_wasserstein,QT_ms,delta,22.099276036570952,,,500,
+A,regularity,delta_wasserstein,rr_cv,delta,0.047391473302072946,,,500,
+A,regularity,wasserstein,PR_ms,cross_domain,20.255544173047042,0.26643092531565893,5.210724988495003e-18,478,
+A,regularity,wasserstein,PR_ms,in_domain,11.322782226186852,0.13137202151283667,3.957006207131229e-06,478,
+A,regularity,wasserstein,QRS_ms,cross_domain,31.105626477541367,0.5459878419452887,2.3960283745864893e-78,500,
+A,regularity,wasserstein,QRS_ms,in_domain,31.942242391884676,0.5273945541911372,1.5643072530145478e-101,500,
+A,regularity,wasserstein,QT_ms,cross_domain,36.97439539996618,0.150675799086758,4.2488848995739746e-06,500,
+A,regularity,wasserstein,QT_ms,in_domain,14.875119363395225,0.06757559681697613,0.0513013639933306,500,
+A,regularity,wasserstein,rr_cv,cross_domain,0.088833553820577,0.531,1.40965726591187e-86,500,
+A,regularity,wasserstein,rr_cv,in_domain,0.04144208051850406,0.3165164319248826,1.910725633323519e-36,500,
+B_uncond,consistency,classifier_fid,,in_domain,62.221278782459336,,,500,Fréchet distance in 768-d classifier features (lower better)
+B_uncond,consistency,coverage,,in_domain,0.8280815569972196,,,500,k-NN coverage of real manifold
+B_uncond,consistency,lead_residual_mean,,in_domain,0.3121230875580197,,,500,"affine residual of III/aVR/aVL/aVF given I,II"
+B_uncond,consistency,lead_residual_wasserstein,,in_domain,0.3072023738338774,,,500,vs real test residual distribution
+B_uncond,consistency,nn_dist_real_real,,in_domain,37.089182295203884,,,2158,reference
+B_uncond,consistency,nn_dist_synth_real,,in_domain,37.272827405189496,,,500,
+B_uncond,consistency,precision_knn,,in_domain,0.964,,,500,fraction inside real manifold (95th pct)
+B_uncond,functional,conditional_consistency,,in_domain,,,,0,not_applicable: route has no diagnostic-label conditioning
+B_uncond,functional,unconditional_class_KL,all5,in_domain,1.5605239429793019,,,1000,
+B_uncond,morphology,dtw,,in_domain,10.895387792112937,,,1000,
+B_uncond,morphology,fd,,in_domain,1.692123856296323e+16,,,1000,
+B_uncond,morphology,heart_rate,,in_domain,0.08352384469905456,,,1000,
+B_uncond,morphology,mmd,,in_domain,0.0005483031272888184,,,1000,
+B_uncond,morphology,nn_dist,,in_domain,2673755.4192708335,,,1000,
+B_uncond,morphology,pr_dist,,in_domain,0.0,,,1000,
+B_uncond,morphology,prd,,in_domain,122.10288747151692,,,1000,
+B_uncond,morphology,psd,,in_domain,0.014131992638911432,,,1000,
+B_uncond,morphology,spectral_entropy,,in_domain,0.09605110761352854,,,1000,
+B_uncond,morphology,swd,,in_domain,13382550.433935352,,,1000,
+B_uncond,regularity,delta_wasserstein,PR_ms,delta,9.67116484299001,,,500,
+B_uncond,regularity,delta_wasserstein,QRS_ms,delta,1.1817125855585875,,,500,
+B_uncond,regularity,delta_wasserstein,QT_ms,delta,-24.030682245989766,,,500,
+B_uncond,regularity,delta_wasserstein,rr_cv,delta,-0.05467392417579381,,,500,
+B_uncond,regularity,wasserstein,PR_ms,cross_domain,21.347918715175354,0.1407987292943045,2.947605932969336e-05,468,
+B_uncond,regularity,wasserstein,PR_ms,in_domain,11.676753872185344,0.0845264436634995,0.009395553870034897,468,
+B_uncond,regularity,wasserstein,QRS_ms,cross_domain,16.602817501840875,0.2092593053963825,3.1187894764658234e-11,488,
+B_uncond,regularity,wasserstein,QRS_ms,in_domain,15.421104916282287,0.1537585446334013,1.8530172621573178e-08,488,
+B_uncond,regularity,wasserstein,QT_ms,cross_domain,69.84728009692452,0.38598822267135763,9.645563407015933e-38,488,
+B_uncond,regularity,wasserstein,QT_ms,in_domain,93.87796234291429,0.4565280253946167,9.955074553643387e-74,488,
+B_uncond,regularity,wasserstein,rr_cv,cross_domain,0.351771536448179,0.827,4.756360713903013e-233,500,
+B_uncond,regularity,wasserstein,rr_cv,in_domain,0.4064454606239728,0.9250704225352113,1.9e-322,500,
+B_cond,consistency,classifier_fid,,in_domain,61.894016640868806,,,1000,Fréchet distance in 768-d classifier features (lower better)
+B_cond,consistency,coverage,,in_domain,0.7706209453197405,,,1000,k-NN coverage of real manifold
+B_cond,consistency,label_tnr_macro,,in_domain,0.8084742381099088,,,500,
+B_cond,consistency,label_tpr_macro,,in_domain,0.25379786808875066,,,500,"per-class TPR at 0.5 (macro): {'NORM': 0.085, 'MI': 0.464, 'STTC': 0.605, 'CD': 0.115, 'HYP': 0.0}"
+B_cond,consistency,lead_residual_mean,,in_domain,0.2564630060114737,,,500,"affine residual of III/aVR/aVL/aVF given I,II"
+B_cond,consistency,lead_residual_wasserstein,,in_domain,0.25154229228733127,,,500,vs real test residual distribution
+B_cond,consistency,nn_dist_real_real,,in_domain,37.089182295203884,,,2158,reference
+B_cond,consistency,nn_dist_synth_real,,in_domain,36.49392069326399,,,1000,
+B_cond,consistency,precision_knn,,in_domain,0.978,,,1000,fraction inside real manifold (95th pct)
+B_cond,downstream,control_macro_ap,,in_domain,0.6876937700495043,,,500,"TSTR/control: base=32, epochs=30, n_train=500; TRTS evaluator=classifier_best_v2.pt"
+B_cond,downstream,control_macro_auroc,,in_domain,0.8064199022032783,,,500,"TSTR/control: base=32, epochs=30, n_train=500; TRTS evaluator=classifier_best_v2.pt"
+B_cond,downstream,control_macro_f1,,in_domain,0.5269932989737028,,,500,"TSTR/control: base=32, epochs=30, n_train=500; TRTS evaluator=classifier_best_v2.pt"
+B_cond,downstream,control_micro_f1,,in_domain,0.6241466744685001,,,500,"TSTR/control: base=32, epochs=30, n_train=500; TRTS evaluator=classifier_best_v2.pt"
+B_cond,downstream,trts_macro_ap,,in_domain,0.30425397771850066,,,500,"TSTR/control: base=32, epochs=30, n_train=500; TRTS evaluator=classifier_best_v2.pt"
+B_cond,downstream,trts_macro_auroc,,in_domain,0.5528828510248831,,,500,"TSTR/control: base=32, epochs=30, n_train=500; TRTS evaluator=classifier_best_v2.pt"
+B_cond,downstream,trts_macro_f1,,in_domain,0.21539574591934113,,,500,"TSTR/control: base=32, epochs=30, n_train=500; TRTS evaluator=classifier_best_v2.pt"
+B_cond,downstream,trts_micro_f1,,in_domain,0.2847341337907376,,,500,"TSTR/control: base=32, epochs=30, n_train=500; TRTS evaluator=classifier_best_v2.pt"
+B_cond,downstream,tstr_macro_ap,,in_domain,0.3028530267457993,,,500,"TSTR/control: base=32, epochs=30, n_train=500; TRTS evaluator=classifier_best_v2.pt"
+B_cond,downstream,tstr_macro_auroc,,in_domain,0.5893127887118398,,,500,"TSTR/control: base=32, epochs=30, n_train=500; TRTS evaluator=classifier_best_v2.pt"
+B_cond,downstream,tstr_macro_f1,,in_domain,0.21122388804178374,,,500,"TSTR/control: base=32, epochs=30, n_train=500; TRTS evaluator=classifier_best_v2.pt"
+B_cond,downstream,tstr_micro_f1,,in_domain,0.25486250838363517,,,500,"TSTR/control: base=32, epochs=30, n_train=500; TRTS evaluator=classifier_best_v2.pt"
+B_cond,functional,conditional_consistency,CD,in_domain,0.11504424778761062,,,113,
+B_cond,functional,conditional_consistency,HYP,in_domain,0.0,,,45,
+B_cond,functional,conditional_consistency,MI,in_domain,0.464,,,125,
+B_cond,functional,conditional_consistency,NORM,in_domain,0.0851063829787234,,,235,
+B_cond,functional,conditional_consistency,STTC,in_domain,0.6048387096774194,,,124,
+B_cond,functional,conditional_consistency_macro,mean,in_domain,0.25379786808875066,,,500,
+B_cond,functional,unconditional_class_KL,all5,in_domain,1.5814657552638467,,,1000,
+B_cond,morphology,dtw,,in_domain,10.79208137724523,,,500,
+B_cond,morphology,fd,,in_domain,1.7403024689218088e+16,,,500,
+B_cond,morphology,heart_rate,,in_domain,0.10081781474806756,,,500,
+B_cond,morphology,mmd,,in_domain,0.0005826453367869059,,,500,
+B_cond,morphology,nn_dist,,in_domain,4161587.3645833335,,,500,
+B_cond,morphology,pr_dist,,in_domain,0.0,,,500,
+B_cond,morphology,prd,,in_domain,121.29343096415202,,,500,
+B_cond,morphology,psd,,in_domain,0.01266894405438053,,,500,
+B_cond,morphology,spectral_entropy,,in_domain,0.09687821615693608,,,500,
+B_cond,morphology,swd,,in_domain,13568087.433089308,,,500,
+B_cond,regularity,delta_wasserstein,PR_ms,delta,10.494276054176925,,,498,
+B_cond,regularity,delta_wasserstein,QRS_ms,delta,0.7029016459154818,,,498,
+B_cond,regularity,delta_wasserstein,QT_ms,delta,-24.555984778191572,,,498,
+B_cond,regularity,delta_wasserstein,rr_cv,delta,-0.05468656775984165,,,498,
+B_cond,regularity,wasserstein,PR_ms,cross_domain,22.70102063372283,0.14089755343099652,2.6987752729162093e-05,473,
+B_cond,regularity,wasserstein,PR_ms,in_domain,12.206744579545905,0.07819548334245537,0.019506636342574334,473,
+B_cond,regularity,wasserstein,QRS_ms,cross_domain,18.558283429845446,0.2147737662786962,7.257077286377202e-12,492,
+B_cond,regularity,wasserstein,QRS_ms,in_domain,17.855381783929964,0.14670499481289528,8.737262528202967e-08,492,
+B_cond,regularity,wasserstein,QT_ms,cross_domain,71.83627610494153,0.4034380875637926,1.7249524545820934e-41,493,
+B_cond,regularity,wasserstein,QT_ms,in_domain,96.3922608831331,0.4760180995475113,4.534219506378539e-81,493,
+B_cond,regularity,wasserstein,rr_cv,cross_domain,0.35856672513018994,0.8338152610441767,1.0300949681302268e-237,498,
+B_cond,regularity,wasserstein,rr_cv,in_domain,0.4132532928900316,0.9354488376039368,1.63e-322,498,
+c_full,consistency,classifier_fid,,in_domain,63.50930503691373,,,1000,Fréchet distance in 768-d classifier features (lower better)
+c_full,consistency,coverage,,in_domain,0.8354958294717331,,,1000,k-NN coverage of real manifold
+c_full,consistency,hr_bias,,in_domain,12.734239205644219,,,498,
+c_full,consistency,hr_mae,,in_domain,20.992531942492427,,,498,detected HR vs requested HR (bpm)
+c_full,consistency,hr_pearson,,in_domain,0.2933017848851715,,,498,
+c_full,consistency,hr_within_10bpm,,in_domain,0.2751004016064257,,,498,
+c_full,consistency,hr_within_5bpm,,in_domain,0.1465863453815261,,,498,
+c_full,consistency,label_tnr_macro,,in_domain,0.8125207277465023,,,500,
+c_full,consistency,label_tpr_macro,,in_domain,0.2501235755370776,,,500,"per-class TPR at 0.5 (macro): {'NORM': 0.094, 'MI': 0.408, 'STTC': 0.669, 'CD': 0.08, 'HYP': 0.0}"
+c_full,consistency,lead_residual_mean,,in_domain,0.2937766638937845,,,500,"affine residual of III/aVR/aVL/aVF given I,II"
+c_full,consistency,lead_residual_wasserstein,,in_domain,0.2888559501696421,,,500,vs real test residual distribution
+c_full,consistency,nn_dist_real_real,,in_domain,37.089182295203884,,,2158,reference
+c_full,consistency,nn_dist_synth_real,,in_domain,37.630802337847726,,,1000,
+c_full,consistency,precision_knn,,in_domain,0.94,,,1000,fraction inside real manifold (95th pct)
+c_full,downstream,control_macro_ap,,in_domain,0.6787963700970564,,,500,"TSTR/control: base=32, epochs=30, n_train=500; TRTS evaluator=classifier_best_v2.pt"
+c_full,downstream,control_macro_auroc,,in_domain,0.8072980757209418,,,500,"TSTR/control: base=32, epochs=30, n_train=500; TRTS evaluator=classifier_best_v2.pt"
+c_full,downstream,control_macro_f1,,in_domain,0.5090809919648557,,,500,"TSTR/control: base=32, epochs=30, n_train=500; TRTS evaluator=classifier_best_v2.pt"
+c_full,downstream,control_micro_f1,,in_domain,0.610747570890343,,,500,"TSTR/control: base=32, epochs=30, n_train=500; TRTS evaluator=classifier_best_v2.pt"
+c_full,downstream,trts_macro_ap,,in_domain,0.30668539591297017,,,500,"TSTR/control: base=32, epochs=30, n_train=500; TRTS evaluator=classifier_best_v2.pt"
+c_full,downstream,trts_macro_auroc,,in_domain,0.5577123994369765,,,500,"TSTR/control: base=32, epochs=30, n_train=500; TRTS evaluator=classifier_best_v2.pt"
+c_full,downstream,trts_macro_f1,,in_domain,0.2085155619348174,,,500,"TSTR/control: base=32, epochs=30, n_train=500; TRTS evaluator=classifier_best_v2.pt"
+c_full,downstream,trts_micro_f1,,in_domain,0.28522039757994816,,,500,"TSTR/control: base=32, epochs=30, n_train=500; TRTS evaluator=classifier_best_v2.pt"
+c_full,downstream,tstr_macro_ap,,in_domain,0.2986107724824298,,,500,"TSTR/control: base=32, epochs=30, n_train=500; TRTS evaluator=classifier_best_v2.pt"
+c_full,downstream,tstr_macro_auroc,,in_domain,0.5882327591766594,,,500,"TSTR/control: base=32, epochs=30, n_train=500; TRTS evaluator=classifier_best_v2.pt"
+c_full,downstream,tstr_macro_f1,,in_domain,0.2461807496178184,,,500,"TSTR/control: base=32, epochs=30, n_train=500; TRTS evaluator=classifier_best_v2.pt"
+c_full,downstream,tstr_micro_f1,,in_domain,0.30451612903225805,,,500,"TSTR/control: base=32, epochs=30, n_train=500; TRTS evaluator=classifier_best_v2.pt"
+c_full,functional,conditional_consistency,CD,in_domain,0.07964601769911504,,,113,
+c_full,functional,conditional_consistency,HYP,in_domain,0.0,,,45,
+c_full,functional,conditional_consistency,MI,in_domain,0.408,,,125,
+c_full,functional,conditional_consistency,NORM,in_domain,0.09361702127659574,,,235,
+c_full,functional,conditional_consistency,STTC,in_domain,0.6693548387096774,,,124,
+c_full,functional,conditional_consistency_macro,mean,in_domain,0.2501235755370776,,,500,
+c_full,functional,unconditional_class_KL,all5,in_domain,1.6041429741413165,,,1000,
+c_full,morphology,dtw,,in_domain,10.800315567759526,,,500,
+c_full,morphology,fd,,in_domain,1.6452664354842018e+16,,,500,
+c_full,morphology,heart_rate,,in_domain,0.08783098484252642,,,500,
+c_full,morphology,mmd,,in_domain,0.00122604767481486,,,500,
+c_full,morphology,nn_dist,,in_domain,3172785.5338541665,,,500,
+c_full,morphology,pr_dist,,in_domain,0.0,,,500,
+c_full,morphology,prd,,in_domain,121.1757100423177,,,500,
+c_full,morphology,psd,,in_domain,0.013731063999609177,,,500,
+c_full,morphology,spectral_entropy,,in_domain,0.11769685956772036,,,500,
+c_full,morphology,swd,,in_domain,13007002.702969782,,,500,
+c_full,regularity,delta_wasserstein,PR_ms,delta,10.28017824073706,,,498,
+c_full,regularity,delta_wasserstein,QRS_ms,delta,0.6881886910378654,,,498,
+c_full,regularity,delta_wasserstein,QT_ms,delta,-24.007958763794974,,,498,
+c_full,regularity,delta_wasserstein,rr_cv,delta,-0.05468656775984149,,,498,
+c_full,regularity,wasserstein,PR_ms,cross_domain,24.89346392001258,0.1529078431733299,3.2482051061094754e-06,481,
+c_full,regularity,wasserstein,PR_ms,in_domain,14.613285679275519,0.08824326083209331,0.005123752335430067,481,
+c_full,regularity,wasserstein,QRS_ms,cross_domain,18.23562930785775,0.22357038258494025,7.497745407523982e-13,494,
+c_full,regularity,wasserstein,QRS_ms,in_domain,17.547440616819884,0.15530844236551378,1.0617405837773163e-08,494,
+c_full,regularity,wasserstein,QT_ms,cross_domain,78.84782791776301,0.42784648660640007,7.429915204363595e-47,494,
+c_full,regularity,wasserstein,QT_ms,in_domain,102.85578668155799,0.5211643166271115,3.1837519184984224e-98,494,
+c_full,regularity,wasserstein,rr_cv,cross_domain,0.3602420037535276,0.8438430583501006,9.91861805275581e-245,497,
+c_full,regularity,wasserstein,rr_cv,in_domain,0.4149285715133691,0.9440643863179075,1.4e-322,497,
+c_no_label,consistency,classifier_fid,,in_domain,63.42463661192136,,,1000,Fréchet distance in 768-d classifier features (lower better)
+c_no_label,consistency,coverage,,in_domain,0.8577386468952733,,,1000,k-NN coverage of real manifold
+c_no_label,consistency,hr_bias,,in_domain,12.419060975816745,,,496,
+c_no_label,consistency,hr_mae,,in_domain,21.60016189147205,,,496,detected HR vs requested HR (bpm)
+c_no_label,consistency,hr_pearson,,in_domain,0.26258782231725586,,,496,
+c_no_label,consistency,hr_within_10bpm,,in_domain,0.28225806451612906,,,496,
+c_no_label,consistency,hr_within_5bpm,,in_domain,0.1431451612903226,,,496,
+c_no_label,consistency,lead_residual_mean,,in_domain,0.29067510754862946,,,500,"affine residual of III/aVR/aVL/aVF given I,II"
+c_no_label,consistency,lead_residual_wasserstein,,in_domain,0.28575439382448714,,,500,vs real test residual distribution
+c_no_label,consistency,nn_dist_real_real,,in_domain,37.089182295203884,,,2158,reference
+c_no_label,consistency,nn_dist_synth_real,,in_domain,39.01188409675979,,,1000,
+c_no_label,consistency,precision_knn,,in_domain,0.88,,,1000,fraction inside real manifold (95th pct)
+c_no_label,downstream,tstr_macro_f1,,in_domain,,,,0,not_applicable: route is not label-conditioned
+c_no_label,functional,conditional_consistency,,in_domain,,,,0,not_applicable: route has no diagnostic-label conditioning
+c_no_label,functional,unconditional_class_KL,all5,in_domain,1.856494035759856,,,1000,
+c_no_label,morphology,dtw,,in_domain,10.804172391477705,,,500,
+c_no_label,morphology,fd,,in_domain,1.3305396761779026e+16,,,500,
+c_no_label,morphology,heart_rate,,in_domain,0.09101932546935308,,,500,
+c_no_label,morphology,mmd,,in_domain,0.00013184547424316406,,,500,
+c_no_label,morphology,nn_dist,,in_domain,2477870.734375,,,500,
+c_no_label,morphology,pr_dist,,in_domain,0.0,,,500,
+c_no_label,morphology,prd,,in_domain,121.51007906595866,,,500,
+c_no_label,morphology,psd,,in_domain,0.013910632456312038,,,500,
+c_no_label,morphology,spectral_entropy,,in_domain,0.10539734243958244,,,500,
+c_no_label,morphology,swd,,in_domain,11159669.436231663,,,500,
+c_no_label,regularity,delta_wasserstein,PR_ms,delta,10.125155931994714,,,497,
+c_no_label,regularity,delta_wasserstein,QRS_ms,delta,0.8529113932267371,,,497,
+c_no_label,regularity,delta_wasserstein,QT_ms,delta,-23.880652213190885,,,497,
+c_no_label,regularity,delta_wasserstein,rr_cv,delta,-0.05468656775984149,,,497,
+c_no_label,regularity,wasserstein,PR_ms,cross_domain,24.786830102939295,0.1541297935103245,3.0410533631304354e-06,472,
+c_no_label,regularity,wasserstein,PR_ms,in_domain,14.66167417094458,0.10050116149014884,0.0009820917102868582,472,
+c_no_label,regularity,wasserstein,QRS_ms,cross_domain,14.683239253148068,0.18549717759444204,6.266959958682006e-09,490,
+c_no_label,regularity,wasserstein,QRS_ms,in_domain,13.830327859921331,0.1371977728624819,7.677676680413451e-07,490,
+c_no_label,regularity,wasserstein,QT_ms,cross_domain,64.66800342922134,0.38031600777464686,9.54862152075975e-37,491,
+c_no_label,regularity,wasserstein,QT_ms,in_domain,88.54865564241223,0.45034709654416094,5.145457726245352e-72,491,
+c_no_label,regularity,wasserstein,rr_cv,cross_domain,0.3524442532494912,0.827516129032258,2.166229791376466e-232,496,
+c_no_label,regularity,wasserstein,rr_cv,in_domain,0.4071308210093327,0.9279191276692412,1.8e-322,496,
+c_no_hr,consistency,classifier_fid,,in_domain,61.894016640868806,,,1000,Fréchet distance in 768-d classifier features (lower better)
+c_no_hr,consistency,coverage,,in_domain,0.7706209453197405,,,1000,k-NN coverage of real manifold
+c_no_hr,consistency,label_tnr_macro,,in_domain,0.8084742381099088,,,500,
+c_no_hr,consistency,label_tpr_macro,,in_domain,0.25379786808875066,,,500,"per-class TPR at 0.5 (macro): {'NORM': 0.085, 'MI': 0.464, 'STTC': 0.605, 'CD': 0.115, 'HYP': 0.0}"
+c_no_hr,consistency,lead_residual_mean,,in_domain,0.2564630060114737,,,500,"affine residual of III/aVR/aVL/aVF given I,II"
+c_no_hr,consistency,lead_residual_wasserstein,,in_domain,0.25154229228733127,,,500,vs real test residual distribution
+c_no_hr,consistency,nn_dist_real_real,,in_domain,37.089182295203884,,,2158,reference
+c_no_hr,consistency,nn_dist_synth_real,,in_domain,36.49392069326399,,,1000,
+c_no_hr,consistency,precision_knn,,in_domain,0.978,,,1000,fraction inside real manifold (95th pct)
+c_no_hr,downstream,control_macro_ap,,in_domain,0.6961406127234444,,,500,"TSTR/control: base=32, epochs=30, n_train=500; TRTS evaluator=classifier_best_v2.pt"
+c_no_hr,downstream,control_macro_auroc,,in_domain,0.813500467788631,,,500,"TSTR/control: base=32, epochs=30, n_train=500; TRTS evaluator=classifier_best_v2.pt"
+c_no_hr,downstream,control_macro_f1,,in_domain,0.5284769168220314,,,500,"TSTR/control: base=32, epochs=30, n_train=500; TRTS evaluator=classifier_best_v2.pt"
+c_no_hr,downstream,control_micro_f1,,in_domain,0.6199291059472233,,,500,"TSTR/control: base=32, epochs=30, n_train=500; TRTS evaluator=classifier_best_v2.pt"
+c_no_hr,downstream,trts_macro_ap,,in_domain,0.30425397771850066,,,500,"TSTR/control: base=32, epochs=30, n_train=500; TRTS evaluator=classifier_best_v2.pt"
+c_no_hr,downstream,trts_macro_auroc,,in_domain,0.5528828510248831,,,500,"TSTR/control: base=32, epochs=30, n_train=500; TRTS evaluator=classifier_best_v2.pt"
+c_no_hr,downstream,trts_macro_f1,,in_domain,0.21539574591934113,,,500,"TSTR/control: base=32, epochs=30, n_train=500; TRTS evaluator=classifier_best_v2.pt"
+c_no_hr,downstream,trts_micro_f1,,in_domain,0.2847341337907376,,,500,"TSTR/control: base=32, epochs=30, n_train=500; TRTS evaluator=classifier_best_v2.pt"
+c_no_hr,downstream,tstr_macro_ap,,in_domain,0.316458844819154,,,500,"TSTR/control: base=32, epochs=30, n_train=500; TRTS evaluator=classifier_best_v2.pt"
+c_no_hr,downstream,tstr_macro_auroc,,in_domain,0.5924594836220186,,,500,"TSTR/control: base=32, epochs=30, n_train=500; TRTS evaluator=classifier_best_v2.pt"
+c_no_hr,downstream,tstr_macro_f1,,in_domain,0.22703502858806254,,,500,"TSTR/control: base=32, epochs=30, n_train=500; TRTS evaluator=classifier_best_v2.pt"
+c_no_hr,downstream,tstr_micro_f1,,in_domain,0.2726883561643836,,,500,"TSTR/control: base=32, epochs=30, n_train=500; TRTS evaluator=classifier_best_v2.pt"
+c_no_hr,functional,conditional_consistency,CD,in_domain,0.11504424778761062,,,113,
+c_no_hr,functional,conditional_consistency,HYP,in_domain,0.0,,,45,
+c_no_hr,functional,conditional_consistency,MI,in_domain,0.464,,,125,
+c_no_hr,functional,conditional_consistency,NORM,in_domain,0.0851063829787234,,,235,
+c_no_hr,functional,conditional_consistency,STTC,in_domain,0.6048387096774194,,,124,
+c_no_hr,functional,conditional_consistency_macro,mean,in_domain,0.25379786808875066,,,500,
+c_no_hr,functional,unconditional_class_KL,all5,in_domain,1.5814657552638467,,,1000,
+c_no_hr,morphology,dtw,,in_domain,10.79208137724523,,,500,
+c_no_hr,morphology,fd,,in_domain,1.7403024689218088e+16,,,500,
+c_no_hr,morphology,heart_rate,,in_domain,0.10081781474806756,,,500,
+c_no_hr,morphology,mmd,,in_domain,0.0005826453367869059,,,500,
+c_no_hr,morphology,nn_dist,,in_domain,4161587.3645833335,,,500,
+c_no_hr,morphology,pr_dist,,in_domain,0.0,,,500,
+c_no_hr,morphology,prd,,in_domain,121.29343096415202,,,500,
+c_no_hr,morphology,psd,,in_domain,0.01266894405438053,,,500,
+c_no_hr,morphology,spectral_entropy,,in_domain,0.09687821615693608,,,500,
+c_no_hr,morphology,swd,,in_domain,13568087.433089308,,,500,
+c_no_hr,regularity,delta_wasserstein,PR_ms,delta,10.494276054176925,,,498,
+c_no_hr,regularity,delta_wasserstein,QRS_ms,delta,0.7029016459154818,,,498,
+c_no_hr,regularity,delta_wasserstein,QT_ms,delta,-24.555984778191572,,,498,
+c_no_hr,regularity,delta_wasserstein,rr_cv,delta,-0.05468656775984165,,,498,
+c_no_hr,regularity,wasserstein,PR_ms,cross_domain,22.70102063372283,0.14089755343099652,2.6987752729162093e-05,473,
+c_no_hr,regularity,wasserstein,PR_ms,in_domain,12.206744579545905,0.07819548334245537,0.019506636342574334,473,
+c_no_hr,regularity,wasserstein,QRS_ms,cross_domain,18.558283429845446,0.2147737662786962,7.257077286377202e-12,492,
+c_no_hr,regularity,wasserstein,QRS_ms,in_domain,17.855381783929964,0.14670499481289528,8.737262528202967e-08,492,
+c_no_hr,regularity,wasserstein,QT_ms,cross_domain,71.83627610494153,0.4034380875637926,1.7249524545820934e-41,493,
+c_no_hr,regularity,wasserstein,QT_ms,in_domain,96.3922608831331,0.4760180995475113,4.534219506378539e-81,493,
+c_no_hr,regularity,wasserstein,rr_cv,cross_domain,0.35856672513018994,0.8338152610441767,1.0300949681302268e-237,498,
+c_no_hr,regularity,wasserstein,rr_cv,in_domain,0.4132532928900316,0.9354488376039368,1.63e-322,498,
+c_label_noise,consistency,classifier_fid,,in_domain,55.51903934760885,,,1000,Fréchet distance in 768-d classifier features (lower better)
+c_label_noise,consistency,coverage,,in_domain,0.8767377201112141,,,1000,k-NN coverage of real manifold
+c_label_noise,consistency,hr_bias,,in_domain,11.488077443649738,,,497,
+c_label_noise,consistency,hr_mae,,in_domain,20.73230518338148,,,497,detected HR vs requested HR (bpm)
+c_label_noise,consistency,hr_pearson,,in_domain,0.3296757037808966,,,497,
+c_label_noise,consistency,hr_within_10bpm,,in_domain,0.2716297786720322,,,497,
+c_label_noise,consistency,hr_within_5bpm,,in_domain,0.12474849094567404,,,497,
+c_label_noise,consistency,label_tnr_macro,,in_domain,0.8008792243290316,,,500,
+c_label_noise,consistency,label_tpr_macro,,in_domain,0.23376557965512842,,,500,"per-class TPR at 0.5 (macro): {'NORM': 0.068, 'MI': 0.384, 'STTC': 0.637, 'CD': 0.08, 'HYP': 0.0}"
+c_label_noise,consistency,lead_residual_mean,,in_domain,0.28728322524822986,,,500,"affine residual of III/aVR/aVL/aVF given I,II"
+c_label_noise,consistency,lead_residual_wasserstein,,in_domain,0.28236251152408753,,,500,vs real test residual distribution
+c_label_noise,consistency,nn_dist_real_real,,in_domain,37.089182295203884,,,2158,reference
+c_label_noise,consistency,nn_dist_synth_real,,in_domain,38.46889644069037,,,1000,
+c_label_noise,consistency,precision_knn,,in_domain,0.919,,,1000,fraction inside real manifold (95th pct)
+c_label_noise,downstream,control_macro_ap,,in_domain,0.6875373344962556,,,500,"TSTR/control: base=32, epochs=30, n_train=500; TRTS evaluator=classifier_best_v2.pt"
+c_label_noise,downstream,control_macro_auroc,,in_domain,0.8101030451899309,,,500,"TSTR/control: base=32, epochs=30, n_train=500; TRTS evaluator=classifier_best_v2.pt"
+c_label_noise,downstream,control_macro_f1,,in_domain,0.5186176424687822,,,500,"TSTR/control: base=32, epochs=30, n_train=500; TRTS evaluator=classifier_best_v2.pt"
+c_label_noise,downstream,control_micro_f1,,in_domain,0.6069352575666466,,,500,"TSTR/control: base=32, epochs=30, n_train=500; TRTS evaluator=classifier_best_v2.pt"
+c_label_noise,downstream,trts_macro_ap,,in_domain,0.289319040447953,,,500,"TSTR/control: base=32, epochs=30, n_train=500; TRTS evaluator=classifier_best_v2.pt"
+c_label_noise,downstream,trts_macro_auroc,,in_domain,0.5335250363073878,,,500,"TSTR/control: base=32, epochs=30, n_train=500; TRTS evaluator=classifier_best_v2.pt"
+c_label_noise,downstream,trts_macro_f1,,in_domain,0.1890150550260441,,,500,"TSTR/control: base=32, epochs=30, n_train=500; TRTS evaluator=classifier_best_v2.pt"
+c_label_noise,downstream,trts_micro_f1,,in_domain,0.26049700085689803,,,500,"TSTR/control: base=32, epochs=30, n_train=500; TRTS evaluator=classifier_best_v2.pt"
+c_label_noise,downstream,tstr_macro_ap,,in_domain,0.2829960016434941,,,500,"TSTR/control: base=32, epochs=30, n_train=500; TRTS evaluator=classifier_best_v2.pt"
+c_label_noise,downstream,tstr_macro_auroc,,in_domain,0.5752556708284325,,,500,"TSTR/control: base=32, epochs=30, n_train=500; TRTS evaluator=classifier_best_v2.pt"
+c_label_noise,downstream,tstr_macro_f1,,in_domain,0.2298390500820587,,,500,"TSTR/control: base=32, epochs=30, n_train=500; TRTS evaluator=classifier_best_v2.pt"
+c_label_noise,downstream,tstr_micro_f1,,in_domain,0.2940220922677063,,,500,"TSTR/control: base=32, epochs=30, n_train=500; TRTS evaluator=classifier_best_v2.pt"
+c_label_noise,functional,conditional_consistency,CD,in_domain,0.07964601769911504,,,113,
+c_label_noise,functional,conditional_consistency,HYP,in_domain,0.0,,,45,
+c_label_noise,functional,conditional_consistency,MI,in_domain,0.384,,,125,
+c_label_noise,functional,conditional_consistency,NORM,in_domain,0.06808510638297872,,,235,
+c_label_noise,functional,conditional_consistency,STTC,in_domain,0.6370967741935484,,,124,
+c_label_noise,functional,conditional_consistency_macro,mean,in_domain,0.23376557965512842,,,500,
+c_label_noise,functional,unconditional_class_KL,all5,in_domain,1.3688760838741343,,,1000,
+c_label_noise,morphology,dtw,,in_domain,10.846676520826398,,,500,
+c_label_noise,morphology,fd,,in_domain,1.6618077892813994e+16,,,500,
+c_label_noise,morphology,heart_rate,,in_domain,0.08629341732996272,,,500,
+c_label_noise,morphology,mmd,,in_domain,0.0011029442151387532,,,500,
+c_label_noise,morphology,nn_dist,,in_domain,4347475.96875,,,500,
+c_label_noise,morphology,pr_dist,,in_domain,0.0,,,500,
+c_label_noise,morphology,prd,,in_domain,121.28994941711426,,,500,
+c_label_noise,morphology,psd,,in_domain,0.014042531600311546,,,500,
+c_label_noise,morphology,spectral_entropy,,in_domain,0.10587748977902504,,,500,
+c_label_noise,morphology,swd,,in_domain,13158978.311170364,,,500,
+c_label_noise,regularity,delta_wasserstein,PR_ms,delta,12.121124719838107,,,497,
+c_label_noise,regularity,delta_wasserstein,QRS_ms,delta,0.6006952057285879,,,497,
+c_label_noise,regularity,delta_wasserstein,QT_ms,delta,-24.562193808454253,,,497,
+c_label_noise,regularity,delta_wasserstein,rr_cv,delta,-0.0546865677598416,,,497,
+c_label_noise,regularity,wasserstein,PR_ms,cross_domain,32.271629717483194,0.19204452148526593,1.3256748898747739e-09,485,
+c_label_noise,regularity,wasserstein,PR_ms,in_domain,20.150504997645086,0.1176350875968857,4.724407194354772e-05,485,
+c_label_noise,regularity,wasserstein,QRS_ms,cross_domain,19.43358145410279,0.2191809959493702,2.3287347210733977e-12,493,
+c_label_noise,regularity,wasserstein,QRS_ms,in_domain,18.8328862483742,0.15452750682540078,1.3188392349824395e-08,493,
+c_label_noise,regularity,wasserstein,QT_ms,cross_domain,75.48471391177472,0.39337190887299034,1.7786287543591818e-39,494,
+c_label_noise,regularity,wasserstein,QT_ms,in_domain,100.04690772022897,0.47460561217367025,1.0653223681856514e-80,494,
+c_label_noise,regularity,wasserstein,rr_cv,cross_domain,0.36147352418882855,0.8366981891348089,2.6877179657506037e-239,497,
+c_label_noise,regularity,wasserstein,rr_cv,in_domain,0.41616009194867015,0.9333333333333333,1.7e-322,497,
+c_label_shuffle,consistency,classifier_fid,,in_domain,57.060334137649626,,,1000,Fréchet distance in 768-d classifier features (lower better)
+c_label_shuffle,consistency,coverage,,in_domain,0.8544949026876738,,,1000,k-NN coverage of real manifold
+c_label_shuffle,consistency,hr_bias,,in_domain,12.04821369064561,,,495,
+c_label_shuffle,consistency,hr_mae,,in_domain,20.683253340643887,,,495,detected HR vs requested HR (bpm)
+c_label_shuffle,consistency,hr_pearson,,in_domain,0.3024476900731416,,,495,
+c_label_shuffle,consistency,hr_within_10bpm,,in_domain,0.30303030303030304,,,495,
+c_label_shuffle,consistency,hr_within_5bpm,,in_domain,0.16565656565656567,,,495,
+c_label_shuffle,consistency,label_tnr_macro,,in_domain,0.78624924560459,,,500,
+c_label_shuffle,consistency,label_tpr_macro,,in_domain,0.20886617063793347,,,500,"per-class TPR at 0.5 (macro): {'NORM': 0.055, 'MI': 0.336, 'STTC': 0.565, 'CD': 0.088, 'HYP': 0.0}"
+c_label_shuffle,consistency,lead_residual_mean,,in_domain,0.2930050804313672,,,500,"affine residual of III/aVR/aVL/aVF given I,II"
+c_label_shuffle,consistency,lead_residual_wasserstein,,in_domain,0.28808436670722487,,,500,vs real test residual distribution
+c_label_shuffle,consistency,nn_dist_real_real,,in_domain,37.089182295203884,,,2158,reference
+c_label_shuffle,consistency,nn_dist_synth_real,,in_domain,38.22672228405699,,,1000,
+c_label_shuffle,consistency,precision_knn,,in_domain,0.937,,,1000,fraction inside real manifold (95th pct)
+c_label_shuffle,downstream,control_macro_ap,,in_domain,0.6857064373989658,,,500,"TSTR/control: base=32, epochs=30, n_train=500; TRTS evaluator=classifier_best_v2.pt"
+c_label_shuffle,downstream,control_macro_auroc,,in_domain,0.8138470093873602,,,500,"TSTR/control: base=32, epochs=30, n_train=500; TRTS evaluator=classifier_best_v2.pt"
+c_label_shuffle,downstream,control_macro_f1,,in_domain,0.49135433533641326,,,500,"TSTR/control: base=32, epochs=30, n_train=500; TRTS evaluator=classifier_best_v2.pt"
+c_label_shuffle,downstream,control_micro_f1,,in_domain,0.6008914100486223,,,500,"TSTR/control: base=32, epochs=30, n_train=500; TRTS evaluator=classifier_best_v2.pt"
+c_label_shuffle,downstream,trts_macro_ap,,in_domain,0.26870118057936954,,,500,"TSTR/control: base=32, epochs=30, n_train=500; TRTS evaluator=classifier_best_v2.pt"
+c_label_shuffle,downstream,trts_macro_auroc,,in_domain,0.5035851683247252,,,500,"TSTR/control: base=32, epochs=30, n_train=500; TRTS evaluator=classifier_best_v2.pt"
+c_label_shuffle,downstream,trts_macro_f1,,in_domain,0.16905147579616867,,,500,"TSTR/control: base=32, epochs=30, n_train=500; TRTS evaluator=classifier_best_v2.pt"
+c_label_shuffle,downstream,trts_micro_f1,,in_domain,0.2297872340425532,,,500,"TSTR/control: base=32, epochs=30, n_train=500; TRTS evaluator=classifier_best_v2.pt"
+c_label_shuffle,downstream,tstr_macro_ap,,in_domain,0.2511200961534771,,,500,"TSTR/control: base=32, epochs=30, n_train=500; TRTS evaluator=classifier_best_v2.pt"
+c_label_shuffle,downstream,tstr_macro_auroc,,in_domain,0.4791865286817652,,,500,"TSTR/control: base=32, epochs=30, n_train=500; TRTS evaluator=classifier_best_v2.pt"
+c_label_shuffle,downstream,tstr_macro_f1,,in_domain,0.148107450308533,,,500,"TSTR/control: base=32, epochs=30, n_train=500; TRTS evaluator=classifier_best_v2.pt"
+c_label_shuffle,downstream,tstr_micro_f1,,in_domain,0.1790556334735858,,,500,"TSTR/control: base=32, epochs=30, n_train=500; TRTS evaluator=classifier_best_v2.pt"
+c_label_shuffle,functional,conditional_consistency,CD,in_domain,0.08849557522123894,,,113,
+c_label_shuffle,functional,conditional_consistency,HYP,in_domain,0.0,,,45,
+c_label_shuffle,functional,conditional_consistency,MI,in_domain,0.336,,,125,
+c_label_shuffle,functional,conditional_consistency,NORM,in_domain,0.05531914893617021,,,235,
+c_label_shuffle,functional,conditional_consistency,STTC,in_domain,0.5645161290322581,,,124,
+c_label_shuffle,functional,conditional_consistency_macro,mean,in_domain,0.20886617063793347,,,500,
+c_label_shuffle,functional,unconditional_class_KL,all5,in_domain,1.5156881140162706,,,1000,
+c_label_shuffle,morphology,dtw,,in_domain,10.880063670560942,,,500,
+c_label_shuffle,morphology,fd,,in_domain,1.7429617292724576e+16,,,500,
+c_label_shuffle,morphology,heart_rate,,in_domain,0.08103572150926762,,,500,
+c_label_shuffle,morphology,mmd,,in_domain,0.0010477205117543538,,,500,
+c_label_shuffle,morphology,nn_dist,,in_domain,3556896.9479166665,,,500,
+c_label_shuffle,morphology,pr_dist,,in_domain,0.0,,,500,
+c_label_shuffle,morphology,prd,,in_domain,120.7198092142741,,,500,
+c_label_shuffle,morphology,psd,,in_domain,0.01556381102590277,,,500,
+c_label_shuffle,morphology,spectral_entropy,,in_domain,0.09646692981261408,,,500,
+c_label_shuffle,morphology,swd,,in_domain,13461395.662799874,,,500,
+c_label_shuffle,regularity,delta_wasserstein,PR_ms,delta,11.550766152978127,,,495,
+c_label_shuffle,regularity,delta_wasserstein,QRS_ms,delta,1.205190465536596,,,495,
+c_label_shuffle,regularity,delta_wasserstein,QT_ms,delta,-24.39617716010015,,,495,
+c_label_shuffle,regularity,delta_wasserstein,rr_cv,delta,-0.05468656775984165,,,495,
+c_label_shuffle,regularity,wasserstein,PR_ms,cross_domain,28.013776416628563,0.15831501418559646,1.482381136843175e-06,471,
+c_label_shuffle,regularity,wasserstein,PR_ms,in_domain,16.463010263650435,0.09868839384827616,0.0013043669240355902,471,
+c_label_shuffle,regularity,wasserstein,QRS_ms,cross_domain,19.01566478743087,0.2280287914669849,2.771861970393924e-13,489,
+c_label_shuffle,regularity,wasserstein,QRS_ms,in_domain,17.810474321894276,0.15816298120858568,6.120018782636711e-09,489,
+c_label_shuffle,regularity,wasserstein,QT_ms,cross_domain,73.93558852855152,0.3926847260740865,3.9890665765133174e-39,489,
+c_label_shuffle,regularity,wasserstein,QT_ms,in_domain,98.33176568865167,0.48172581948761345,1.3726426384651722e-82,489,
+c_label_shuffle,regularity,wasserstein,rr_cv,cross_domain,0.3570748313564465,0.8312195121951219,5.907390082549523e-234,492,
+c_label_shuffle,regularity,wasserstein,rr_cv,in_domain,0.4117613991162882,0.9223978014428031,2.08e-322,492,
+d_seed42,consistency,classifier_fid,,in_domain,93.42799408808115,,,1000,Fréchet distance in 768-d classifier features (lower better)
+d_seed42,consistency,coverage,,in_domain,0.0,,,1000,k-NN coverage of real manifold
+d_seed42,consistency,lead_residual_mean,,in_domain,0.2553136527640214,,,500,"affine residual of III/aVR/aVL/aVF given I,II"
+d_seed42,consistency,lead_residual_wasserstein,,in_domain,0.250392939039879,,,500,vs real test residual distribution
+d_seed42,consistency,nn_dist_real_real,,in_domain,37.089182295203884,,,2158,reference
+d_seed42,consistency,nn_dist_synth_real,,in_domain,42.76545223755787,,,1000,
+d_seed42,consistency,precision_knn,,in_domain,0.656,,,1000,fraction inside real manifold (95th pct)
+d_seed42,downstream,tstr_macro_f1,,in_domain,,,,0,not_applicable: route is not label-conditioned
+d_seed42,functional,conditional_consistency,,in_domain,,,,0,not_applicable: route has no diagnostic-label conditioning
+d_seed42,functional,unconditional_class_KL,all5,in_domain,3.4202836096970066,,,1000,
+d_seed42,morphology,dtw,,in_domain,10.705046784803983,,,500,
+d_seed42,morphology,fd,,in_domain,1.5614854158817654e+16,,,500,
+d_seed42,morphology,heart_rate,,in_domain,0.24761490309814158,,,500,
+d_seed42,morphology,mmd,,in_domain,0.042203630010286965,,,500,
+d_seed42,morphology,nn_dist,,in_domain,9675366.588541666,,,500,
+d_seed42,morphology,pr_dist,,in_domain,0.0,,,500,
+d_seed42,morphology,prd,,in_domain,120.31740506490071,,,500,
+d_seed42,morphology,psd,,in_domain,0.03068246056974296,,,500,
+d_seed42,morphology,spectral_entropy,,in_domain,0.25166827503602734,,,500,
+d_seed42,morphology,swd,,in_domain,8920471.733225761,,,500,
+d_seed42,regularity,delta_wasserstein,PR_ms,delta,12.133718328183974,,,480,
+d_seed42,regularity,delta_wasserstein,QRS_ms,delta,0.34716339154305587,,,480,
+d_seed42,regularity,delta_wasserstein,QT_ms,delta,-1.6779461623460463,,,480,
+d_seed42,regularity,delta_wasserstein,rr_cv,delta,-0.0529722816816636,,,480,
+d_seed42,regularity,wasserstein,PR_ms,cross_domain,72.73502510214317,0.7474673761092738,7.066904828424815e-154,479,
+d_seed42,regularity,wasserstein,PR_ms,in_domain,60.601306773959195,0.644704197855327,8.854042569920085e-150,479,
+d_seed42,regularity,wasserstein,QRS_ms,cross_domain,36.59545384359936,0.4546040065739795,3.377040859877609e-52,479,
+d_seed42,regularity,wasserstein,QRS_ms,in_domain,36.2482904520563,0.4378627390441244,1.5160330809266299e-66,479,
+d_seed42,regularity,wasserstein,QT_ms,cross_domain,44.15750900231508,0.3942892187236855,5.391592003152801e-39,479,
+d_seed42,regularity,wasserstein,QT_ms,in_domain,45.83545516466113,0.39114091581156585,7.666516127043259e-53,479,
+d_seed42,regularity,wasserstein,rr_cv,cross_domain,0.15112566240113798,0.71475,4.082976522353022e-161,480,
+d_seed42,regularity,wasserstein,rr_cv,in_domain,0.20409794408280157,0.8651701877934272,8.06791977e-316,480,
+d_seed43,consistency,classifier_fid,,in_domain,60.880500464758455,,,1000,Fréchet distance in 768-d classifier features (lower better)
+d_seed43,consistency,coverage,,in_domain,0.0,,,1000,k-NN coverage of real manifold
+d_seed43,consistency,lead_residual_mean,,in_domain,0.33269339382383273,,,500,"affine residual of III/aVR/aVL/aVF given I,II"
+d_seed43,consistency,lead_residual_wasserstein,,in_domain,0.32777268009969035,,,500,vs real test residual distribution
+d_seed43,consistency,nn_dist_real_real,,in_domain,37.089182295203884,,,2158,reference
+d_seed43,consistency,nn_dist_synth_real,,in_domain,51.407407877422244,,,1000,
+d_seed43,consistency,precision_knn,,in_domain,0.557,,,1000,fraction inside real manifold (95th pct)
+d_seed43,downstream,tstr_macro_f1,,in_domain,,,,0,not_applicable: route is not label-conditioned
+d_seed43,functional,conditional_consistency,,in_domain,,,,0,not_applicable: route has no diagnostic-label conditioning
+d_seed43,functional,unconditional_class_KL,all5,in_domain,1.4235388014438985,,,1000,
+d_seed43,morphology,dtw,,in_domain,10.927720193721703,,,500,
+d_seed43,morphology,fd,,in_domain,2244070872646962.8,,,500,
+d_seed43,morphology,heart_rate,,in_domain,0.16993583906986978,,,500,
+d_seed43,morphology,mmd,,in_domain,0.002455135186513265,,,500,
+d_seed43,morphology,nn_dist,,in_domain,768724.1380208334,,,500,
+d_seed43,morphology,pr_dist,,in_domain,0.0,,,500,
+d_seed43,morphology,prd,,in_domain,128.66534169514975,,,500,
+d_seed43,morphology,psd,,in_domain,0.007370182060091304,,,500,
+d_seed43,morphology,spectral_entropy,,in_domain,0.233012793705065,,,500,
+d_seed43,morphology,swd,,in_domain,3751354.909002027,,,500,
+d_seed43,regularity,delta_wasserstein,PR_ms,delta,-9.925791642178783,,,500,
+d_seed43,regularity,delta_wasserstein,QRS_ms,delta,-0.42994736911878206,,,500,
+d_seed43,regularity,delta_wasserstein,QT_ms,delta,17.622204790940184,,,500,
+d_seed43,regularity,delta_wasserstein,rr_cv,delta,-0.05299023526198529,,,500,
+d_seed43,regularity,wasserstein,PR_ms,cross_domain,17.69297445435626,0.22056367061165014,9.907412033699287e-13,498,
+d_seed43,regularity,wasserstein,PR_ms,in_domain,27.618766096535044,0.207890784797396,3.350867148535092e-15,498,
+d_seed43,regularity,wasserstein,QRS_ms,cross_domain,13.197975963292551,0.19128184470404413,1.4826742547665035e-09,498,
+d_seed43,regularity,wasserstein,QRS_ms,in_domain,13.627923332411333,0.18206836958083267,7.032145105237381e-12,498,
+d_seed43,regularity,wasserstein,QT_ms,cross_domain,38.5275449846061,0.2512699198620968,3.28339828542486e-16,498,
+d_seed43,regularity,wasserstein,QT_ms,in_domain,20.905340193665918,0.21642218742343378,1.1702365556254725e-16,498,
+d_seed43,regularity,wasserstein,rr_cv,cross_domain,0.16268367838095657,0.662,3.2828087733343106e-139,500,
+d_seed43,regularity,wasserstein,rr_cv,in_domain,0.21567391364294186,0.831830985915493,1.0176612344093998e-293,500,
+d_seed44,consistency,classifier_fid,,in_domain,64.941494480166,,,1000,Fréchet distance in 768-d classifier features (lower better)
+d_seed44,consistency,coverage,,in_domain,0.0,,,1000,k-NN coverage of real manifold
+d_seed44,consistency,lead_residual_mean,,in_domain,0.30721987702564163,,,500,"affine residual of III/aVR/aVL/aVF given I,II"
+d_seed44,consistency,lead_residual_wasserstein,,in_domain,0.30229916330149925,,,500,vs real test residual distribution
+d_seed44,consistency,nn_dist_real_real,,in_domain,37.089182295203884,,,2158,reference
+d_seed44,consistency,nn_dist_synth_real,,in_domain,38.89765377715156,,,1000,
+d_seed44,consistency,precision_knn,,in_domain,0.881,,,1000,fraction inside real manifold (95th pct)
+d_seed44,downstream,tstr_macro_f1,,in_domain,,,,0,not_applicable: route is not label-conditioned
+d_seed44,functional,conditional_consistency,,in_domain,,,,0,not_applicable: route has no diagnostic-label conditioning
+d_seed44,functional,unconditional_class_KL,all5,in_domain,2.8999947649120004,,,1000,
+d_seed44,morphology,dtw,,in_domain,10.854935051213552,,,500,
+d_seed44,morphology,fd,,in_domain,3113763711429141.5,,,500,
+d_seed44,morphology,heart_rate,,in_domain,0.17464039780129645,,,500,
+d_seed44,morphology,mmd,,in_domain,0.005726555983225505,,,500,
+d_seed44,morphology,nn_dist,,in_domain,1069182.7994791667,,,500,
+d_seed44,morphology,pr_dist,,in_domain,0.0,,,500,
+d_seed44,morphology,prd,,in_domain,128.68475850423178,,,500,
+d_seed44,morphology,psd,,in_domain,0.010563420201173982,,,500,
+d_seed44,morphology,spectral_entropy,,in_domain,0.3382060638624149,,,500,
+d_seed44,morphology,swd,,in_domain,4711115.599873231,,,500,
+d_seed44,regularity,delta_wasserstein,PR_ms,delta,10.245352402957373,,,500,
+d_seed44,regularity,delta_wasserstein,QRS_ms,delta,0.47094812018781873,,,500,
+d_seed44,regularity,delta_wasserstein,QT_ms,delta,-24.148743581220337,,,500,
+d_seed44,regularity,delta_wasserstein,rr_cv,delta,-0.0529788916872983,,,500,
+d_seed44,regularity,wasserstein,PR_ms,cross_domain,19.33022072004474,0.17993092372716216,5.0888768835130035e-08,439,
+d_seed44,regularity,wasserstein,PR_ms,in_domain,9.084868317087366,0.090432673344922,0.005865454485995324,439,
+d_seed44,regularity,wasserstein,QRS_ms,cross_domain,9.786740965889905,0.13970212765957446,2.6297844267775458e-05,500,
+d_seed44,regularity,wasserstein,QRS_ms,in_domain,9.315792845702086,0.10634063000533903,0.00024121206633315097,500,
+d_seed44,regularity,wasserstein,QT_ms,cross_domain,61.666375782174875,0.29476103500761036,2.8567534374167528e-22,500,
+d_seed44,regularity,wasserstein,QT_ms,in_domain,85.81511936339521,0.36289655172413793,6.649054266341458e-47,500,
+d_seed44,regularity,wasserstein,rr_cv,cross_domain,0.18749485007805136,0.746,2.7241389657763307e-182,500,
+d_seed44,regularity,wasserstein,rr_cv,in_domain,0.24047374176534966,0.897981220657277,3.4e-322,500,
+b_cond_v2,consistency,classifier_fid,,in_domain,77.1395211859821,,,1000,Fréchet distance in 768-d classifier features (lower better)
+b_cond_v2,consistency,coverage,,in_domain,0.6774791473586654,,,1000,k-NN coverage of real manifold
+b_cond_v2,consistency,label_tnr_macro,,in_domain,0.7967334791813837,,,500,
+b_cond_v2,consistency,label_tpr_macro,,in_domain,0.2332689427299397,,,500,"per-class TPR at 0.5 (macro): {'NORM': 0.017, 'MI': 0.36, 'STTC': 0.71, 'CD': 0.08, 'HYP': 0.0}"
+b_cond_v2,consistency,lead_residual_mean,,in_domain,0.3475269517768098,,,500,"affine residual of III/aVR/aVL/aVF given I,II"
+b_cond_v2,consistency,lead_residual_wasserstein,,in_domain,0.34260623805266754,,,500,vs real test residual distribution
+b_cond_v2,consistency,nn_dist_real_real,,in_domain,37.089182295203884,,,2158,reference
+b_cond_v2,consistency,nn_dist_synth_real,,in_domain,35.57566217396357,,,1000,
+b_cond_v2,consistency,precision_knn,,in_domain,0.981,,,1000,fraction inside real manifold (95th pct)
+b_cond_v2,downstream,control_macro_ap,,in_domain,0.6695684190038896,,,500,"TSTR/control: base=32, epochs=30, n_train=500; TRTS evaluator=classifier_best_v2.pt"
+b_cond_v2,downstream,control_macro_auroc,,in_domain,0.8006534460624348,,,500,"TSTR/control: base=32, epochs=30, n_train=500; TRTS evaluator=classifier_best_v2.pt"
+b_cond_v2,downstream,control_macro_f1,,in_domain,0.5182448612753812,,,500,"TSTR/control: base=32, epochs=30, n_train=500; TRTS evaluator=classifier_best_v2.pt"
+b_cond_v2,downstream,control_micro_f1,,in_domain,0.6050552922590837,,,500,"TSTR/control: base=32, epochs=30, n_train=500; TRTS evaluator=classifier_best_v2.pt"
+b_cond_v2,downstream,trts_macro_ap,,in_domain,0.2863435698509259,,,500,"TSTR/control: base=32, epochs=30, n_train=500; TRTS evaluator=classifier_best_v2.pt"
+b_cond_v2,downstream,trts_macro_auroc,,in_domain,0.5388362867657577,,,500,"TSTR/control: base=32, epochs=30, n_train=500; TRTS evaluator=classifier_best_v2.pt"
+b_cond_v2,downstream,trts_macro_f1,,in_domain,0.1723969773404983,,,500,"TSTR/control: base=32, epochs=30, n_train=500; TRTS evaluator=classifier_best_v2.pt"
+b_cond_v2,downstream,trts_micro_f1,,in_domain,0.24957264957264957,,,500,"TSTR/control: base=32, epochs=30, n_train=500; TRTS evaluator=classifier_best_v2.pt"
+b_cond_v2,downstream,tstr_macro_ap,,in_domain,0.27422088303155245,,,500,"TSTR/control: base=32, epochs=30, n_train=500; TRTS evaluator=classifier_best_v2.pt"
+b_cond_v2,downstream,tstr_macro_auroc,,in_domain,0.5347139734245674,,,500,"TSTR/control: base=32, epochs=30, n_train=500; TRTS evaluator=classifier_best_v2.pt"
+b_cond_v2,downstream,tstr_macro_f1,,in_domain,0.13264055501062527,,,500,"TSTR/control: base=32, epochs=30, n_train=500; TRTS evaluator=classifier_best_v2.pt"
+b_cond_v2,downstream,tstr_micro_f1,,in_domain,0.21305841924398625,,,500,"TSTR/control: base=32, epochs=30, n_train=500; TRTS evaluator=classifier_best_v2.pt"
+b_cond_v2,functional,conditional_consistency,CD,in_domain,0.07964601769911504,,,113,
+b_cond_v2,functional,conditional_consistency,HYP,in_domain,0.0,,,45,
+b_cond_v2,functional,conditional_consistency,MI,in_domain,0.36,,,125,
+b_cond_v2,functional,conditional_consistency,NORM,in_domain,0.01702127659574468,,,235,
+b_cond_v2,functional,conditional_consistency,STTC,in_domain,0.7096774193548387,,,124,
+b_cond_v2,functional,conditional_consistency_macro,mean,in_domain,0.2332689427299397,,,500,
+b_cond_v2,functional,unconditional_class_KL,all5,in_domain,2.042884942536137,,,1000,
+b_cond_v2,morphology,dtw,,in_domain,10.67302091341542,,,500,
+b_cond_v2,morphology,fd,,in_domain,9831784167791552.0,,,500,
+b_cond_v2,morphology,heart_rate,,in_domain,0.07357242348081228,,,500,
+b_cond_v2,morphology,mmd,,in_domain,0.0004735390345255534,,,500,
+b_cond_v2,morphology,nn_dist,,in_domain,4962981.614583333,,,500,
+b_cond_v2,morphology,pr_dist,,in_domain,0.0,,,500,
+b_cond_v2,morphology,prd,,in_domain,118.60827509562175,,,500,
+b_cond_v2,morphology,psd,,in_domain,0.013640615087627114,,,500,
+b_cond_v2,morphology,spectral_entropy,,in_domain,0.1556005198557314,,,500,
+b_cond_v2,morphology,swd,,in_domain,7348760.686151248,,,500,
+b_cond_v2,regularity,delta_wasserstein,PR_ms,delta,12.00446054967415,,,497,
+b_cond_v2,regularity,delta_wasserstein,QRS_ms,delta,0.41783674911764734,,,497,
+b_cond_v2,regularity,delta_wasserstein,QT_ms,delta,-24.518388903176373,,,497,
+b_cond_v2,regularity,delta_wasserstein,rr_cv,delta,-0.05468656775984149,,,497,
+b_cond_v2,regularity,wasserstein,PR_ms,cross_domain,29.11832186168469,0.17256637168141592,1.665816682034942e-07,452,
+b_cond_v2,regularity,wasserstein,PR_ms,in_domain,17.113861312010542,0.11220919495480387,0.00020732373774211865,452,
+b_cond_v2,regularity,wasserstein,QRS_ms,cross_domain,19.209780188306993,0.2027330657895558,1.4864174526968958e-10,487,
+b_cond_v2,regularity,wasserstein,QRS_ms,in_domain,18.791943439189346,0.146183033291637,1.1288588118186598e-07,487,
+b_cond_v2,regularity,wasserstein,QT_ms,cross_domain,80.62319273639554,0.42949454202500675,5.698169995984438e-47,489,
+b_cond_v2,regularity,wasserstein,QT_ms,in_domain,105.14158163957191,0.5103556763383292,3.127506160142227e-93,489,
+b_cond_v2,regularity,wasserstein,rr_cv,cross_domain,0.37157609254885393,0.8417102615694165,6.784108246522341e-243,497,
+b_cond_v2,regularity,wasserstein,rr_cv,in_domain,0.4262626603086954,0.9298457411133467,1.73e-322,497,
+c_full_v2,consistency,classifier_fid,,in_domain,72.57783702863426,,,1000,Fréchet distance in 768-d classifier features (lower better)
+c_full_v2,consistency,coverage,,in_domain,0.8322520852641334,,,1000,k-NN coverage of real manifold
+c_full_v2,consistency,hr_bias,,in_domain,8.368865356856308,,,499,
+c_full_v2,consistency,hr_mae,,in_domain,17.06733547488099,,,499,detected HR vs requested HR (bpm)
+c_full_v2,consistency,hr_pearson,,in_domain,0.4008225484293703,,,499,
+c_full_v2,consistency,hr_within_10bpm,,in_domain,0.374749498997996,,,499,
+c_full_v2,consistency,hr_within_5bpm,,in_domain,0.18637274549098196,,,499,
+c_full_v2,consistency,label_tnr_macro,,in_domain,0.8204101160041783,,,500,
+c_full_v2,consistency,label_tpr_macro,,in_domain,0.26495976093439666,,,500,"per-class TPR at 0.5 (macro): {'NORM': 0.047, 'MI': 0.6, 'STTC': 0.581, 'CD': 0.097, 'HYP': 0.0}"
+c_full_v2,consistency,lead_residual_mean,,in_domain,0.35006727919894154,,,500,"affine residual of III/aVR/aVL/aVF given I,II"
+c_full_v2,consistency,lead_residual_wasserstein,,in_domain,0.34514656547479916,,,500,vs real test residual distribution
+c_full_v2,consistency,nn_dist_real_real,,in_domain,37.089182295203884,,,2158,reference
+c_full_v2,consistency,nn_dist_synth_real,,in_domain,37.15251777522214,,,1000,
+c_full_v2,consistency,precision_knn,,in_domain,0.932,,,1000,fraction inside real manifold (95th pct)
+c_full_v2,downstream,control_macro_ap,,in_domain,0.6868736675627574,,,500,"TSTR/control: base=32, epochs=30, n_train=500; TRTS evaluator=classifier_best_v2.pt"
+c_full_v2,downstream,control_macro_auroc,,in_domain,0.8095146293837615,,,500,"TSTR/control: base=32, epochs=30, n_train=500; TRTS evaluator=classifier_best_v2.pt"
+c_full_v2,downstream,control_macro_f1,,in_domain,0.5169867225445163,,,500,"TSTR/control: base=32, epochs=30, n_train=500; TRTS evaluator=classifier_best_v2.pt"
+c_full_v2,downstream,control_micro_f1,,in_domain,0.6126622099882029,,,500,"TSTR/control: base=32, epochs=30, n_train=500; TRTS evaluator=classifier_best_v2.pt"
+c_full_v2,downstream,trts_macro_ap,,in_domain,0.3358091945047184,,,500,"TSTR/control: base=32, epochs=30, n_train=500; TRTS evaluator=classifier_best_v2.pt"
+c_full_v2,downstream,trts_macro_auroc,,in_domain,0.6316928700594403,,,500,"TSTR/control: base=32, epochs=30, n_train=500; TRTS evaluator=classifier_best_v2.pt"
+c_full_v2,downstream,trts_macro_f1,,in_domain,0.21381474648266394,,,500,"TSTR/control: base=32, epochs=30, n_train=500; TRTS evaluator=classifier_best_v2.pt"
+c_full_v2,downstream,trts_micro_f1,,in_domain,0.29416884247171454,,,500,"TSTR/control: base=32, epochs=30, n_train=500; TRTS evaluator=classifier_best_v2.pt"
+c_full_v2,downstream,tstr_macro_ap,,in_domain,0.3891954429739306,,,500,"TSTR/control: base=32, epochs=30, n_train=500; TRTS evaluator=classifier_best_v2.pt"
+c_full_v2,downstream,tstr_macro_auroc,,in_domain,0.6817050791386041,,,500,"TSTR/control: base=32, epochs=30, n_train=500; TRTS evaluator=classifier_best_v2.pt"
+c_full_v2,downstream,tstr_macro_f1,,in_domain,0.3392458844364474,,,500,"TSTR/control: base=32, epochs=30, n_train=500; TRTS evaluator=classifier_best_v2.pt"
+c_full_v2,downstream,tstr_micro_f1,,in_domain,0.3962962962962963,,,500,"TSTR/control: base=32, epochs=30, n_train=500; TRTS evaluator=classifier_best_v2.pt"
+c_full_v2,functional,conditional_consistency,CD,in_domain,0.09734513274336283,,,113,
+c_full_v2,functional,conditional_consistency,HYP,in_domain,0.0,,,45,
+c_full_v2,functional,conditional_consistency,MI,in_domain,0.6,,,125,
+c_full_v2,functional,conditional_consistency,NORM,in_domain,0.04680851063829787,,,235,
+c_full_v2,functional,conditional_consistency,STTC,in_domain,0.5806451612903226,,,124,
+c_full_v2,functional,conditional_consistency_macro,mean,in_domain,0.26495976093439666,,,500,
+c_full_v2,functional,unconditional_class_KL,all5,in_domain,1.8685828451979472,,,1000,
+c_full_v2,morphology,dtw,,in_domain,10.717843302976085,,,500,
+c_full_v2,morphology,fd,,in_domain,6692710419117567.0,,,500,
+c_full_v2,morphology,heart_rate,,in_domain,0.04811045511631193,,,500,
+c_full_v2,morphology,mmd,,in_domain,0.0004775822162628174,,,500,
+c_full_v2,morphology,nn_dist,,in_domain,4459531.479166667,,,500,
+c_full_v2,morphology,pr_dist,,in_domain,0.0,,,500,
+c_full_v2,morphology,prd,,in_domain,120.14188385009766,,,500,
+c_full_v2,morphology,psd,,in_domain,0.011735835907023729,,,500,
+c_full_v2,morphology,spectral_entropy,,in_domain,0.14095790614976308,,,500,
+c_full_v2,morphology,swd,,in_domain,6239740.3128420925,,,500,
+c_full_v2,regularity,delta_wasserstein,PR_ms,delta,12.103289472514145,,,500,
+c_full_v2,regularity,delta_wasserstein,QRS_ms,delta,1.2793014193151002,,,500,
+c_full_v2,regularity,delta_wasserstein,QT_ms,delta,-24.3004857349366,,,500,
+c_full_v2,regularity,delta_wasserstein,rr_cv,delta,-0.05468656775984149,,,500,
+c_full_v2,regularity,wasserstein,PR_ms,cross_domain,33.2673402728331,0.20972434136913845,1.0753259559137287e-10,435,
+c_full_v2,regularity,wasserstein,PR_ms,in_domain,21.164050800318957,0.12754147460956494,2.0434421132510074e-05,435,
+c_full_v2,regularity,wasserstein,QRS_ms,cross_domain,15.96898116373065,0.19197347779194038,1.3364590758991363e-09,496,
+c_full_v2,regularity,wasserstein,QRS_ms,in_domain,14.68967974441555,0.13385675903759708,1.365287308632568e-06,496,
+c_full_v2,regularity,wasserstein,QT_ms,cross_domain,60.85424815742242,0.32386028870231254,9.51289629489177e-27,496,
+c_full_v2,regularity,wasserstein,QT_ms,in_domain,85.15473389235902,0.3931686917087362,7.177001290103612e-55,496,
+c_full_v2,regularity,wasserstein,rr_cv,cross_domain,0.36042513675916843,0.8439238476953907,2.038764119834801e-245,499,
+c_full_v2,regularity,wasserstein,rr_cv,in_domain,0.4151117045190099,0.9374890626323069,1.6e-322,499,
+c_nle_v2,consistency,classifier_fid,,in_domain,78.352467319036,,,1000,Fréchet distance in 768-d classifier features (lower better)
+c_nle_v2,consistency,coverage,,in_domain,0.6320667284522706,,,1000,k-NN coverage of real manifold
+c_nle_v2,consistency,hr_bias,,in_domain,10.830607286407586,,,498,
+c_nle_v2,consistency,hr_mae,,in_domain,21.58018841565135,,,498,detected HR vs requested HR (bpm)
+c_nle_v2,consistency,hr_pearson,,in_domain,0.1627387247805839,,,498,
+c_nle_v2,consistency,hr_within_10bpm,,in_domain,0.28313253012048195,,,498,
+c_nle_v2,consistency,hr_within_5bpm,,in_domain,0.15060240963855423,,,498,
+c_nle_v2,consistency,label_tnr_macro,,in_domain,0.7940581537462513,,,500,
+c_nle_v2,consistency,label_tpr_macro,,in_domain,0.23760645525719598,,,500,"per-class TPR at 0.5 (macro): {'NORM': 0.034, 'MI': 0.392, 'STTC': 0.718, 'CD': 0.044, 'HYP': 0.0}"
+c_nle_v2,consistency,lead_residual_mean,,in_domain,0.3636787569293186,,,500,"affine residual of III/aVR/aVL/aVF given I,II"
+c_nle_v2,consistency,lead_residual_wasserstein,,in_domain,0.3587580432051762,,,500,vs real test residual distribution
+c_nle_v2,consistency,nn_dist_real_real,,in_domain,37.089182295203884,,,2158,reference
+c_nle_v2,consistency,nn_dist_synth_real,,in_domain,35.88543476689863,,,1000,
+c_nle_v2,consistency,precision_knn,,in_domain,0.966,,,1000,fraction inside real manifold (95th pct)
+c_nle_v2,downstream,control_macro_ap,,in_domain,0.7012557056697933,,,500,"TSTR/control: base=32, epochs=30, n_train=500; TRTS evaluator=classifier_best_v2.pt"
+c_nle_v2,downstream,control_macro_auroc,,in_domain,0.8203801113180134,,,500,"TSTR/control: base=32, epochs=30, n_train=500; TRTS evaluator=classifier_best_v2.pt"
+c_nle_v2,downstream,control_macro_f1,,in_domain,0.5325862262464547,,,500,"TSTR/control: base=32, epochs=30, n_train=500; TRTS evaluator=classifier_best_v2.pt"
+c_nle_v2,downstream,control_micro_f1,,in_domain,0.6188500296384114,,,500,"TSTR/control: base=32, epochs=30, n_train=500; TRTS evaluator=classifier_best_v2.pt"
+c_nle_v2,downstream,trts_macro_ap,,in_domain,0.2826025427811227,,,500,"TSTR/control: base=32, epochs=30, n_train=500; TRTS evaluator=classifier_best_v2.pt"
+c_nle_v2,downstream,trts_macro_auroc,,in_domain,0.5228034641817799,,,500,"TSTR/control: base=32, epochs=30, n_train=500; TRTS evaluator=classifier_best_v2.pt"
+c_nle_v2,downstream,trts_macro_f1,,in_domain,0.1720727369077966,,,500,"TSTR/control: base=32, epochs=30, n_train=500; TRTS evaluator=classifier_best_v2.pt"
+c_nle_v2,downstream,trts_micro_f1,,in_domain,0.2561492790500424,,,500,"TSTR/control: base=32, epochs=30, n_train=500; TRTS evaluator=classifier_best_v2.pt"
+c_nle_v2,downstream,tstr_macro_ap,,in_domain,0.2774574943875491,,,500,"TSTR/control: base=32, epochs=30, n_train=500; TRTS evaluator=classifier_best_v2.pt"
+c_nle_v2,downstream,tstr_macro_auroc,,in_domain,0.5508037383426837,,,500,"TSTR/control: base=32, epochs=30, n_train=500; TRTS evaluator=classifier_best_v2.pt"
+c_nle_v2,downstream,tstr_macro_f1,,in_domain,0.16647099277170466,,,500,"TSTR/control: base=32, epochs=30, n_train=500; TRTS evaluator=classifier_best_v2.pt"
+c_nle_v2,downstream,tstr_micro_f1,,in_domain,0.20355029585798817,,,500,"TSTR/control: base=32, epochs=30, n_train=500; TRTS evaluator=classifier_best_v2.pt"
+c_nle_v2,functional,conditional_consistency,CD,in_domain,0.04424778761061947,,,113,
+c_nle_v2,functional,conditional_consistency,HYP,in_domain,0.0,,,45,
+c_nle_v2,functional,conditional_consistency,MI,in_domain,0.392,,,125,
+c_nle_v2,functional,conditional_consistency,NORM,in_domain,0.03404255319148936,,,235,
+c_nle_v2,functional,conditional_consistency,STTC,in_domain,0.717741935483871,,,124,
+c_nle_v2,functional,conditional_consistency_macro,mean,in_domain,0.23760645525719598,,,500,
+c_nle_v2,functional,unconditional_class_KL,all5,in_domain,2.054666594353014,,,1000,
+c_nle_v2,morphology,dtw,,in_domain,10.62017453813895,,,500,
+c_nle_v2,morphology,fd,,in_domain,1.1546969643992354e+16,,,500,
+c_nle_v2,morphology,heart_rate,,in_domain,0.08402151331472218,,,500,
+c_nle_v2,morphology,mmd,,in_domain,0.0006633599599202474,,,500,
+c_nle_v2,morphology,nn_dist,,in_domain,4943557.604166667,,,500,
+c_nle_v2,morphology,pr_dist,,in_domain,0.0,,,500,
+c_nle_v2,morphology,prd,,in_domain,117.63968149820964,,,500,
+c_nle_v2,morphology,psd,,in_domain,0.014282345255127858,,,500,
+c_nle_v2,morphology,spectral_entropy,,in_domain,0.14293166804248467,,,500,
+c_nle_v2,morphology,swd,,in_domain,8205029.97867382,,,500,
+c_nle_v2,regularity,delta_wasserstein,PR_ms,delta,12.204780023466213,,,500,
+c_nle_v2,regularity,delta_wasserstein,QRS_ms,delta,0.5551018790551616,,,500,
+c_nle_v2,regularity,delta_wasserstein,QT_ms,delta,-24.562193808454253,,,500,
+c_nle_v2,regularity,delta_wasserstein,rr_cv,delta,-0.0546865677598416,,,500,
+c_nle_v2,regularity,wasserstein,PR_ms,cross_domain,34.3965815312082,0.18663723564393864,1.4154171311016777e-08,437,
+c_nle_v2,regularity,wasserstein,PR_ms,in_domain,22.191801507741985,0.1282277642904436,1.7297192797898517e-05,437,
+c_nle_v2,regularity,wasserstein,QRS_ms,cross_domain,18.61171710734168,0.22221541327581135,9.8710933853265e-13,496,
+c_nle_v2,regularity,wasserstein,QRS_ms,in_domain,18.056615228286518,0.15234960301741213,2.0571307390448835e-08,496,
+c_nle_v2,regularity,wasserstein,QT_ms,cross_domain,79.68528201938867,0.45493322531546126,2.692093657194027e-53,496,
+c_nle_v2,regularity,wasserstein,QT_ms,in_domain,104.24747582784292,0.5253893214682981,3.1908044826847114e-100,496,
+c_nle_v2,regularity,wasserstein,rr_cv,cross_domain,0.3600816416207985,0.849939879759519,6.226976391430364e-250,499,
+c_nle_v2,regularity,wasserstein,rr_cv,in_domain,0.4147682093806401,0.9398016690658312,1.53e-322,499,
+c_mask_v2,consistency,classifier_fid,,in_domain,162.44447208356738,,,1000,Fréchet distance in 768-d classifier features (lower better)
+c_mask_v2,consistency,coverage,,in_domain,0.47914735866543096,,,1000,k-NN coverage of real manifold
+c_mask_v2,consistency,hr_bias,,in_domain,16.395509556626152,,,500,
+c_mask_v2,consistency,hr_mae,,in_domain,21.560322857838234,,,500,detected HR vs requested HR (bpm)
+c_mask_v2,consistency,hr_pearson,,in_domain,0.36346586753408106,,,500,
+c_mask_v2,consistency,hr_within_10bpm,,in_domain,0.278,,,500,
+c_mask_v2,consistency,hr_within_5bpm,,in_domain,0.142,,,500,
+c_mask_v2,consistency,label_tnr_macro,,in_domain,0.8135359063170048,,,500,
+c_mask_v2,consistency,label_tpr_macro,,in_domain,0.2983494658074234,,,500,"per-class TPR at 0.5 (macro): {'NORM': 0.077, 'MI': 0.592, 'STTC': 0.726, 'CD': 0.097, 'HYP': 0.0}"
+c_mask_v2,consistency,lead_residual_mean,,in_domain,0.32076230062136085,,,500,"affine residual of III/aVR/aVL/aVF given I,II"
+c_mask_v2,consistency,lead_residual_wasserstein,,in_domain,0.3158415868972186,,,500,vs real test residual distribution
+c_mask_v2,consistency,nn_dist_real_real,,in_domain,37.089182295203884,,,2158,reference
+c_mask_v2,consistency,nn_dist_synth_real,,in_domain,30.434579844397533,,,1000,
+c_mask_v2,consistency,precision_knn,,in_domain,0.99,,,1000,fraction inside real manifold (95th pct)
+c_mask_v2,downstream,control_macro_ap,,in_domain,0.6776703220823355,,,500,"TSTR/control: base=32, epochs=30, n_train=500; TRTS evaluator=classifier_best_v2.pt"
+c_mask_v2,downstream,control_macro_auroc,,in_domain,0.8065510197324576,,,500,"TSTR/control: base=32, epochs=30, n_train=500; TRTS evaluator=classifier_best_v2.pt"
+c_mask_v2,downstream,control_macro_f1,,in_domain,0.5086203915666425,,,500,"TSTR/control: base=32, epochs=30, n_train=500; TRTS evaluator=classifier_best_v2.pt"
+c_mask_v2,downstream,control_micro_f1,,in_domain,0.6020775069916101,,,500,"TSTR/control: base=32, epochs=30, n_train=500; TRTS evaluator=classifier_best_v2.pt"
+c_mask_v2,downstream,trts_macro_ap,,in_domain,0.35426043207459734,,,500,"TSTR/control: base=32, epochs=30, n_train=500; TRTS evaluator=classifier_best_v2.pt"
+c_mask_v2,downstream,trts_macro_auroc,,in_domain,0.6480228450639582,,,500,"TSTR/control: base=32, epochs=30, n_train=500; TRTS evaluator=classifier_best_v2.pt"
+c_mask_v2,downstream,trts_macro_f1,,in_domain,0.240794314930684,,,500,"TSTR/control: base=32, epochs=30, n_train=500; TRTS evaluator=classifier_best_v2.pt"
+c_mask_v2,downstream,trts_micro_f1,,in_domain,0.3254637436762226,,,500,"TSTR/control: base=32, epochs=30, n_train=500; TRTS evaluator=classifier_best_v2.pt"
+c_mask_v2,downstream,tstr_macro_ap,,in_domain,0.5147259536615018,,,500,"TSTR/control: base=32, epochs=30, n_train=500; TRTS evaluator=classifier_best_v2.pt"
+c_mask_v2,downstream,tstr_macro_auroc,,in_domain,0.7178485125923656,,,500,"TSTR/control: base=32, epochs=30, n_train=500; TRTS evaluator=classifier_best_v2.pt"
+c_mask_v2,downstream,tstr_macro_f1,,in_domain,0.40719250780440647,,,500,"TSTR/control: base=32, epochs=30, n_train=500; TRTS evaluator=classifier_best_v2.pt"
+c_mask_v2,downstream,tstr_micro_f1,,in_domain,0.5046296296296297,,,500,"TSTR/control: base=32, epochs=30, n_train=500; TRTS evaluator=classifier_best_v2.pt"
+c_mask_v2,functional,conditional_consistency,CD,in_domain,0.09734513274336283,,,113,
+c_mask_v2,functional,conditional_consistency,HYP,in_domain,0.0,,,45,
+c_mask_v2,functional,conditional_consistency,MI,in_domain,0.592,,,125,
+c_mask_v2,functional,conditional_consistency,NORM,in_domain,0.07659574468085106,,,235,
+c_mask_v2,functional,conditional_consistency,STTC,in_domain,0.7258064516129032,,,124,
+c_mask_v2,functional,conditional_consistency_macro,mean,in_domain,0.2983494658074234,,,500,
+c_mask_v2,functional,unconditional_class_KL,all5,in_domain,9.708024439088794,,,1000,
+c_mask_v2,morphology,dtw,,in_domain,10.591206434336726,,,500,
+c_mask_v2,morphology,fd,,in_domain,7764173010271927.0,,,500,
+c_mask_v2,morphology,heart_rate,,in_domain,0.09008977206659902,,,500,
+c_mask_v2,morphology,mmd,,in_domain,0.0008225739002227783,,,500,
+c_mask_v2,morphology,nn_dist,,in_domain,5429166.732421875,,,500,
+c_mask_v2,morphology,pr_dist,,in_domain,0.0,,,500,
+c_mask_v2,morphology,prd,,in_domain,119.08490816752116,,,500,
+c_mask_v2,morphology,psd,,in_domain,0.009926671412185804,,,500,
+c_mask_v2,morphology,spectral_entropy,,in_domain,0.15716921417340834,,,500,
+c_mask_v2,morphology,swd,,in_domain,6637837.782748151,,,500,
+c_mask_v2,regularity,delta_wasserstein,PR_ms,delta,7.7639126123723585,,,500,
+c_mask_v2,regularity,delta_wasserstein,QRS_ms,delta,0.6041897969874057,,,500,
+c_mask_v2,regularity,delta_wasserstein,QT_ms,delta,-24.562193808454253,,,500,
+c_mask_v2,regularity,delta_wasserstein,rr_cv,delta,-0.0546865677598416,,,500,
+c_mask_v2,regularity,wasserstein,PR_ms,cross_domain,18.98720998969893,0.15269437420986093,5.813049785953042e-06,448,
+c_mask_v2,regularity,wasserstein,PR_ms,in_domain,11.22329737732657,0.06357515510434292,0.105548897497508,448,
+c_mask_v2,regularity,wasserstein,QRS_ms,cross_domain,19.567479932728155,0.22794203432501306,2.3096099267314375e-13,495,
+c_mask_v2,regularity,wasserstein,QRS_ms,in_domain,18.96329013574075,0.15957762353918253,3.5450124782736085e-09,495,
+c_mask_v2,regularity,wasserstein,QT_ms,cross_domain,67.28621066063988,0.3656288916562889,4.328550167203937e-34,495,
+c_mask_v2,regularity,wasserstein,QT_ms,in_domain,91.84840446909413,0.43608498780912575,8.432183622692222e-68,495,
+c_mask_v2,regularity,wasserstein,rr_cv,cross_domain,0.36239544867107465,0.85,1.3364867795838887e-249,500,
+c_mask_v2,regularity,wasserstein,rr_cv,in_domain,0.41708201643091625,0.9413802816901409,1.5e-322,500,
+c_aux05_v2,consistency,classifier_fid,,in_domain,73.92457441550653,,,1000,Fréchet distance in 768-d classifier features (lower better)
+c_aux05_v2,consistency,coverage,,in_domain,0.7451343836886005,,,1000,k-NN coverage of real manifold
+c_aux05_v2,consistency,hr_bias,,in_domain,13.759240101724274,,,500,
+c_aux05_v2,consistency,hr_mae,,in_domain,18.93499675666888,,,500,detected HR vs requested HR (bpm)
+c_aux05_v2,consistency,hr_pearson,,in_domain,0.3934462494975974,,,500,
+c_aux05_v2,consistency,hr_within_10bpm,,in_domain,0.342,,,500,
+c_aux05_v2,consistency,hr_within_5bpm,,in_domain,0.182,,,500,
+c_aux05_v2,consistency,label_tnr_macro,,in_domain,0.8207606355489581,,,500,
+c_aux05_v2,consistency,label_tpr_macro,,in_domain,0.27713282596680056,,,500,"per-class TPR at 0.5 (macro): {'NORM': 0.038, 'MI': 0.608, 'STTC': 0.677, 'CD': 0.062, 'HYP': 0.0}"
+c_aux05_v2,consistency,lead_residual_mean,,in_domain,0.4160023366735794,,,500,"affine residual of III/aVR/aVL/aVF given I,II"
+c_aux05_v2,consistency,lead_residual_wasserstein,,in_domain,0.41108162294943706,,,500,vs real test residual distribution
+c_aux05_v2,consistency,nn_dist_real_real,,in_domain,37.089182295203884,,,2158,reference
+c_aux05_v2,consistency,nn_dist_synth_real,,in_domain,35.7146251417553,,,1000,
+c_aux05_v2,consistency,precision_knn,,in_domain,0.979,,,1000,fraction inside real manifold (95th pct)
+c_aux05_v2,downstream,control_macro_ap,,in_domain,0.6687259957506377,,,500,"TSTR/control: base=32, epochs=30, n_train=500; TRTS evaluator=classifier_best_v2.pt"
+c_aux05_v2,downstream,control_macro_auroc,,in_domain,0.7985979756437873,,,500,"TSTR/control: base=32, epochs=30, n_train=500; TRTS evaluator=classifier_best_v2.pt"
+c_aux05_v2,downstream,control_macro_f1,,in_domain,0.4895415824557694,,,500,"TSTR/control: base=32, epochs=30, n_train=500; TRTS evaluator=classifier_best_v2.pt"
+c_aux05_v2,downstream,control_micro_f1,,in_domain,0.5916346736714487,,,500,"TSTR/control: base=32, epochs=30, n_train=500; TRTS evaluator=classifier_best_v2.pt"
+c_aux05_v2,downstream,trts_macro_ap,,in_domain,0.35172626082434055,,,500,"TSTR/control: base=32, epochs=30, n_train=500; TRTS evaluator=classifier_best_v2.pt"
+c_aux05_v2,downstream,trts_macro_auroc,,in_domain,0.659603212513862,,,500,"TSTR/control: base=32, epochs=30, n_train=500; TRTS evaluator=classifier_best_v2.pt"
+c_aux05_v2,downstream,trts_macro_f1,,in_domain,0.2136556183623103,,,500,"TSTR/control: base=32, epochs=30, n_train=500; TRTS evaluator=classifier_best_v2.pt"
+c_aux05_v2,downstream,trts_micro_f1,,in_domain,0.3047619047619048,,,500,"TSTR/control: base=32, epochs=30, n_train=500; TRTS evaluator=classifier_best_v2.pt"
+c_aux05_v2,downstream,tstr_macro_ap,,in_domain,0.43782501819128944,,,500,"TSTR/control: base=32, epochs=30, n_train=500; TRTS evaluator=classifier_best_v2.pt"
+c_aux05_v2,downstream,tstr_macro_auroc,,in_domain,0.687679207103413,,,500,"TSTR/control: base=32, epochs=30, n_train=500; TRTS evaluator=classifier_best_v2.pt"
+c_aux05_v2,downstream,tstr_macro_f1,,in_domain,0.3774749468332693,,,500,"TSTR/control: base=32, epochs=30, n_train=500; TRTS evaluator=classifier_best_v2.pt"
+c_aux05_v2,downstream,tstr_micro_f1,,in_domain,0.44764444444444446,,,500,"TSTR/control: base=32, epochs=30, n_train=500; TRTS evaluator=classifier_best_v2.pt"
+c_aux05_v2,functional,conditional_consistency,CD,in_domain,0.061946902654867256,,,113,
+c_aux05_v2,functional,conditional_consistency,HYP,in_domain,0.0,,,45,
+c_aux05_v2,functional,conditional_consistency,MI,in_domain,0.608,,,125,
+c_aux05_v2,functional,conditional_consistency,NORM,in_domain,0.03829787234042553,,,235,
+c_aux05_v2,functional,conditional_consistency,STTC,in_domain,0.6774193548387096,,,124,
+c_aux05_v2,functional,conditional_consistency_macro,mean,in_domain,0.27713282596680056,,,500,
+c_aux05_v2,functional,unconditional_class_KL,all5,in_domain,2.1954582982913102,,,1000,
+c_aux05_v2,morphology,dtw,,in_domain,10.48831891947559,,,500,
+c_aux05_v2,morphology,fd,,in_domain,7142118417775344.0,,,500,
+c_aux05_v2,morphology,heart_rate,,in_domain,0.07412102951063197,,,500,
+c_aux05_v2,morphology,mmd,,in_domain,0.0008202493190765381,,,500,
+c_aux05_v2,morphology,nn_dist,,in_domain,7122887.729166667,,,500,
+c_aux05_v2,morphology,pr_dist,,in_domain,0.0,,,500,
+c_aux05_v2,morphology,prd,,in_domain,120.08539199829102,,,500,
+c_aux05_v2,morphology,psd,,in_domain,0.01007393994038355,,,500,
+c_aux05_v2,morphology,spectral_entropy,,in_domain,0.17789915453792704,,,500,
+c_aux05_v2,morphology,swd,,in_domain,6329723.718579259,,,500,
+c_aux05_v2,regularity,delta_wasserstein,PR_ms,delta,12.004784500508974,,,500,
+c_aux05_v2,regularity,delta_wasserstein,QRS_ms,delta,0.7161082398002776,,,500,
+c_aux05_v2,regularity,delta_wasserstein,QT_ms,delta,-23.59073595927279,,,500,
+c_aux05_v2,regularity,delta_wasserstein,rr_cv,delta,-0.05468656775984149,,,500,
+c_aux05_v2,regularity,wasserstein,PR_ms,cross_domain,19.41511508653958,0.18747740032353222,5.8444444752457735e-09,465,
+c_aux05_v2,regularity,wasserstein,PR_ms,in_domain,7.4103305860306055,0.053745246802394335,0.2279445053908058,465,
+c_aux05_v2,regularity,wasserstein,QRS_ms,cross_domain,19.75012010597866,0.2326084164561839,6.243545919265512e-14,497,
+c_aux05_v2,regularity,wasserstein,QRS_ms,in_domain,19.034011866178382,0.1627426061977847,1.47797523735452e-09,497,
+c_aux05_v2,regularity,wasserstein,QT_ms,cross_domain,62.06755329882219,0.34248412851538457,5.922566095307181e-30,497,
+c_aux05_v2,regularity,wasserstein,QT_ms,in_domain,85.65828925809498,0.41607629864065027,9.718433756372556e-62,497,
+c_aux05_v2,regularity,wasserstein,rr_cv,cross_domain,0.3372235036633682,0.823,2.793346701937085e-230,500,
+c_aux05_v2,regularity,wasserstein,rr_cv,in_domain,0.39191007142320966,0.9321314553990611,1.7e-322,500,
+classifier,classifier,ap,CD,in_domain,0.8197623236519814,,,496,test fold 10
+classifier_v2,classifier,ap,CD,in_domain,0.815716392304393,,,496,test fold 10 (v2: base96 + label smoothing + EMA + threshold tuning)
+classifier,classifier,ap,HYP,in_domain,0.478931550972048,,,262,test fold 10
+classifier_v2,classifier,ap,HYP,in_domain,0.4765634202366885,,,262,test fold 10 (v2: base96 + label smoothing + EMA + threshold tuning)
+classifier,classifier,ap,MI,in_domain,0.7622477517441328,,,550,test fold 10
+classifier_v2,classifier,ap,MI,in_domain,0.7838643480447545,,,550,test fold 10 (v2: base96 + label smoothing + EMA + threshold tuning)
+classifier,classifier,ap,NORM,in_domain,0.9120732531657529,,,963,test fold 10
+classifier_v2,classifier,ap,NORM,in_domain,0.9026231364693316,,,963,test fold 10 (v2: base96 + label smoothing + EMA + threshold tuning)
+classifier,classifier,ap,STTC,in_domain,0.8185702650078911,,,521,test fold 10
+classifier_v2,classifier,ap,STTC,in_domain,0.7967025598241998,,,521,test fold 10 (v2: base96 + label smoothing + EMA + threshold tuning)
+classifier,classifier,auroc,CD,in_domain,0.9104605799464306,,,496,test fold 10
+classifier_v2,classifier,auroc,CD,in_domain,0.9110586254415588,,,496,test fold 10 (v2: base96 + label smoothing + EMA + threshold tuning)
+classifier,classifier,auroc,HYP,in_domain,0.8195578477791735,,,262,test fold 10
+classifier_v2,classifier,auroc,HYP,in_domain,0.8174843785228847,,,262,test fold 10 (v2: base96 + label smoothing + EMA + threshold tuning)
+classifier,classifier,auroc,MI,in_domain,0.8914122568973314,,,550,test fold 10
+classifier_v2,classifier,auroc,MI,in_domain,0.9034848484848486,,,550,test fold 10 (v2: base96 + label smoothing + EMA + threshold tuning)
+classifier,classifier,auroc,NORM,in_domain,0.9368048766711419,,,963,test fold 10
+classifier_v2,classifier,auroc,NORM,in_domain,0.9320585513366962,,,963,test fold 10 (v2: base96 + label smoothing + EMA + threshold tuning)
+classifier,classifier,auroc,STTC,in_domain,0.9294822113856981,,,521,test fold 10
+classifier_v2,classifier,auroc,STTC,in_domain,0.9232128431180581,,,521,test fold 10 (v2: base96 + label smoothing + EMA + threshold tuning)
+classifier,classifier,exact_match,overall,in_domain,0.5736793327154773,,,2158,test fold 10
+classifier,classifier,f1,CD,in_domain,0.7132867132867133,,,496,test fold 10
+classifier_v2,classifier,f1,CD,in_domain,0.7305122494432071,,,496,test fold 10 (v2: base96 + label smoothing + EMA + threshold tuning)
+classifier,classifier,f1,HYP,in_domain,0.42660550458715596,,,262,test fold 10
+classifier_v2,classifier,f1,HYP,in_domain,0.41784037558685444,,,262,test fold 10 (v2: base96 + label smoothing + EMA + threshold tuning)
+classifier,classifier,f1,MI,in_domain,0.6833333333333333,,,550,test fold 10
+classifier_v2,classifier,f1,MI,in_domain,0.6958174904942965,,,550,test fold 10 (v2: base96 + label smoothing + EMA + threshold tuning)
+classifier,classifier,f1,NORM,in_domain,0.8401874023945861,,,963,test fold 10
+classifier_v2,classifier,f1,NORM,in_domain,0.8452562151192288,,,963,test fold 10 (v2: base96 + label smoothing + EMA + threshold tuning)
+classifier,classifier,f1,STTC,in_domain,0.7556390977443609,,,521,test fold 10
+classifier_v2,classifier,f1,STTC,in_domain,0.74447391688771,,,521,test fold 10 (v2: base96 + label smoothing + EMA + threshold tuning)
+classifier_v2,classifier,fixed0.5_exact_match,overall,in_domain,0.5889712696941612,,,2158,test fold 10 (v2: base96 + label smoothing + EMA + threshold tuning)
+classifier_v2,classifier,fixed0.5_loss,overall,in_domain,0.32283330739814997,,,2158,test fold 10 (v2: base96 + label smoothing + EMA + threshold tuning)
+classifier_v2,classifier,fixed0.5_macro_ap,overall,in_domain,0.8128928354023972,,,2158,test fold 10 (v2: base96 + label smoothing + EMA + threshold tuning)
+classifier_v2,classifier,fixed0.5_macro_auroc,overall,in_domain,0.8974598493808091,,,2158,test fold 10 (v2: base96 + label smoothing + EMA + threshold tuning)
+classifier_v2,classifier,fixed0.5_macro_f1,overall,in_domain,0.6867800495062594,,,2158,test fold 10 (v2: base96 + label smoothing + EMA + threshold tuning)
+classifier_v2,classifier,fixed0.5_micro_f1,overall,in_domain,0.7437020810514786,,,2158,test fold 10 (v2: base96 + label smoothing + EMA + threshold tuning)
+classifier,classifier,loss,overall,in_domain,0.31227858230623523,,,2158,test fold 10
+classifier,classifier,macro_ap,overall,in_domain,0.819005484168407,,,2158,test fold 10
+classifier,classifier,macro_auroc,overall,in_domain,0.897543554535955,,,2158,test fold 10
+classifier,classifier,macro_f1,overall,in_domain,0.68381041026923,,,2158,test fold 10
+classifier,classifier,micro_f1,overall,in_domain,0.7378242209367419,,,2158,test fold 10
+classifier,classifier,precision,CD,in_domain,0.8453038674033149,,,496,test fold 10
+classifier_v2,classifier,precision,CD,in_domain,0.8159203980099502,,,496,test fold 10 (v2: base96 + label smoothing + EMA + threshold tuning)
+classifier,classifier,precision,HYP,in_domain,0.5344827586206896,,,262,test fold 10
+classifier_v2,classifier,precision,HYP,in_domain,0.5426829268292683,,,262,test fold 10 (v2: base96 + label smoothing + EMA + threshold tuning)
+classifier,classifier,precision,MI,in_domain,0.6962264150943396,,,550,test fold 10
+classifier_v2,classifier,precision,MI,in_domain,0.7290836653386454,,,550,test fold 10 (v2: base96 + label smoothing + EMA + threshold tuning)
+classifier,classifier,precision,NORM,in_domain,0.8423799582463466,,,963,test fold 10
+classifier_v2,classifier,precision,NORM,in_domain,0.8263888888888888,,,963,test fold 10 (v2: base96 + label smoothing + EMA + threshold tuning)
+classifier,classifier,precision,STTC,in_domain,0.7403314917127072,,,521,test fold 10
+classifier_v2,classifier,precision,STTC,in_domain,0.6901639344262295,,,521,test fold 10 (v2: base96 + label smoothing + EMA + threshold tuning)
+classifier,classifier,recall,CD,in_domain,0.6169354838709677,,,496,test fold 10
+classifier_v2,classifier,recall,CD,in_domain,0.6612903225806451,,,496,test fold 10 (v2: base96 + label smoothing + EMA + threshold tuning)
+classifier,classifier,recall,HYP,in_domain,0.3549618320610687,,,262,test fold 10
+classifier_v2,classifier,recall,HYP,in_domain,0.33969465648854963,,,262,test fold 10 (v2: base96 + label smoothing + EMA + threshold tuning)
+classifier,classifier,recall,MI,in_domain,0.6709090909090909,,,550,test fold 10
+classifier_v2,classifier,recall,MI,in_domain,0.6654545454545454,,,550,test fold 10 (v2: base96 + label smoothing + EMA + threshold tuning)
+classifier,classifier,recall,NORM,in_domain,0.838006230529595,,,963,test fold 10
+classifier_v2,classifier,recall,NORM,in_domain,0.8650051921079959,,,963,test fold 10 (v2: base96 + label smoothing + EMA + threshold tuning)
+classifier,classifier,recall,STTC,in_domain,0.7715930902111324,,,521,test fold 10
+classifier_v2,classifier,recall,STTC,in_domain,0.8080614203454894,,,521,test fold 10 (v2: base96 + label smoothing + EMA + threshold tuning)
+classifier,classifier,support,CD,in_domain,496.0,,,496,test fold 10
+classifier_v2,classifier,support,CD,in_domain,496.0,,,496,test fold 10 (v2: base96 + label smoothing + EMA + threshold tuning)
+classifier,classifier,support,HYP,in_domain,262.0,,,262,test fold 10
+classifier_v2,classifier,support,HYP,in_domain,262.0,,,262,test fold 10 (v2: base96 + label smoothing + EMA + threshold tuning)
+classifier,classifier,support,MI,in_domain,550.0,,,550,test fold 10
+classifier_v2,classifier,support,MI,in_domain,550.0,,,550,test fold 10 (v2: base96 + label smoothing + EMA + threshold tuning)
+classifier,classifier,support,NORM,in_domain,963.0,,,963,test fold 10
+classifier_v2,classifier,support,NORM,in_domain,963.0,,,963,test fold 10 (v2: base96 + label smoothing + EMA + threshold tuning)
+classifier,classifier,support,STTC,in_domain,521.0,,,521,test fold 10
+classifier_v2,classifier,support,STTC,in_domain,521.0,,,521,test fold 10 (v2: base96 + label smoothing + EMA + threshold tuning)
+classifier_v2,classifier,threshold,CD,in_domain,0.4,,,496,test fold 10 (v2: base96 + label smoothing + EMA + threshold tuning)
+classifier_v2,classifier,threshold,HYP,in_domain,0.2,,,262,test fold 10 (v2: base96 + label smoothing + EMA + threshold tuning)
+classifier_v2,classifier,threshold,MI,in_domain,0.25,,,550,test fold 10 (v2: base96 + label smoothing + EMA + threshold tuning)
+classifier_v2,classifier,threshold,NORM,in_domain,0.35000000000000003,,,963,test fold 10 (v2: base96 + label smoothing + EMA + threshold tuning)
+classifier_v2,classifier,threshold,STTC,in_domain,0.4,,,521,test fold 10 (v2: base96 + label smoothing + EMA + threshold tuning)
+classifier_v2,classifier,tuned_exact_match,overall,in_domain,0.530583873957368,,,2158,test fold 10 (v2: base96 + label smoothing + EMA + threshold tuning)
+classifier_v2,classifier,tuned_macro_f1,overall,in_domain,0.6970480205872625,,,2158,test fold 10 (v2: base96 + label smoothing + EMA + threshold tuning)
+classifier_v2,classifier,tuned_micro_f1,overall,in_domain,0.7387654320987654,,,2158,test fold 10 (v2: base96 + label smoothing + EMA + threshold tuning)
+REAL_PTBXL_TEST,consistency,lead_residual_mean,,in_domain,0.004920713724142335,,,800,real test reference

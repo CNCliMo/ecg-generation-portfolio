@@ -1,0 +1,179 @@
+route,metric_group,metric,value,n,note
+REAL_PTBXL_TEST,consistency,lead_residual_mean,0.004920713724142335,800,real test reference
+A,consistency,hr_mae,0.5711252104903588,500,detected HR vs requested HR (bpm)
+A,consistency,hr_bias,0.0911043173856256,500,
+A,consistency,hr_pearson,0.9990017270481558,500,
+A,consistency,hr_within_5bpm,1.0,500,
+A,consistency,hr_within_10bpm,1.0,500,
+A,consistency,lead_residual_mean,0.20848933499679198,500,"affine residual of III/aVR/aVL/aVF given I,II"
+A,consistency,lead_residual_wasserstein,0.20356862127264969,500,vs real test residual distribution
+A,consistency,coverage,0.963855421686747,1000,k-NN coverage of real manifold
+A,consistency,precision_knn,0.712,1000,fraction inside real manifold (95th pct)
+A,consistency,nn_dist_synth_real,43.18669727297154,1000,
+A,consistency,nn_dist_real_real,37.089182295203884,2158,reference
+A,consistency,classifier_fid,139.07776105996865,1000,Fréchet distance in 768-d classifier features (lower better)
+B_uncond,consistency,lead_residual_mean,0.3121230875580197,500,"affine residual of III/aVR/aVL/aVF given I,II"
+B_uncond,consistency,lead_residual_wasserstein,0.3072023738338774,500,vs real test residual distribution
+B_uncond,consistency,coverage,0.8280815569972196,500,k-NN coverage of real manifold
+B_uncond,consistency,precision_knn,0.964,500,fraction inside real manifold (95th pct)
+B_uncond,consistency,nn_dist_synth_real,37.272827405189496,500,
+B_uncond,consistency,nn_dist_real_real,37.089182295203884,2158,reference
+B_uncond,consistency,classifier_fid,62.221278782459336,500,Fréchet distance in 768-d classifier features (lower better)
+B_cond,consistency,label_tpr_macro,0.25379786808875066,500,"per-class TPR at 0.5 (macro): {'NORM': 0.085, 'MI': 0.464, 'STTC': 0.605, 'CD': 0.115, 'HYP': 0.0}"
+B_cond,consistency,label_tnr_macro,0.8084742381099088,500,
+B_cond,consistency,lead_residual_mean,0.2564630060114737,500,"affine residual of III/aVR/aVL/aVF given I,II"
+B_cond,consistency,lead_residual_wasserstein,0.25154229228733127,500,vs real test residual distribution
+B_cond,consistency,coverage,0.7706209453197405,1000,k-NN coverage of real manifold
+B_cond,consistency,precision_knn,0.978,1000,fraction inside real manifold (95th pct)
+B_cond,consistency,nn_dist_synth_real,36.49392069326399,1000,
+B_cond,consistency,nn_dist_real_real,37.089182295203884,2158,reference
+B_cond,consistency,classifier_fid,61.894016640868806,1000,Fréchet distance in 768-d classifier features (lower better)
+c_full,consistency,hr_mae,20.992531942492427,498,detected HR vs requested HR (bpm)
+c_full,consistency,hr_bias,12.734239205644219,498,
+c_full,consistency,hr_pearson,0.2933017848851715,498,
+c_full,consistency,hr_within_5bpm,0.1465863453815261,498,
+c_full,consistency,hr_within_10bpm,0.2751004016064257,498,
+c_full,consistency,label_tpr_macro,0.2501235755370776,500,"per-class TPR at 0.5 (macro): {'NORM': 0.094, 'MI': 0.408, 'STTC': 0.669, 'CD': 0.08, 'HYP': 0.0}"
+c_full,consistency,label_tnr_macro,0.8125207277465023,500,
+c_full,consistency,lead_residual_mean,0.2937766638937845,500,"affine residual of III/aVR/aVL/aVF given I,II"
+c_full,consistency,lead_residual_wasserstein,0.2888559501696421,500,vs real test residual distribution
+c_full,consistency,coverage,0.8354958294717331,1000,k-NN coverage of real manifold
+c_full,consistency,precision_knn,0.94,1000,fraction inside real manifold (95th pct)
+c_full,consistency,nn_dist_synth_real,37.630802337847726,1000,
+c_full,consistency,nn_dist_real_real,37.089182295203884,2158,reference
+c_full,consistency,classifier_fid,63.50930503691373,1000,Fréchet distance in 768-d classifier features (lower better)
+c_no_label,consistency,hr_mae,21.60016189147205,496,detected HR vs requested HR (bpm)
+c_no_label,consistency,hr_bias,12.419060975816745,496,
+c_no_label,consistency,hr_pearson,0.26258782231725586,496,
+c_no_label,consistency,hr_within_5bpm,0.1431451612903226,496,
+c_no_label,consistency,hr_within_10bpm,0.28225806451612906,496,
+c_no_label,consistency,lead_residual_mean,0.29067510754862946,500,"affine residual of III/aVR/aVL/aVF given I,II"
+c_no_label,consistency,lead_residual_wasserstein,0.28575439382448714,500,vs real test residual distribution
+c_no_label,consistency,coverage,0.8577386468952733,1000,k-NN coverage of real manifold
+c_no_label,consistency,precision_knn,0.88,1000,fraction inside real manifold (95th pct)
+c_no_label,consistency,nn_dist_synth_real,39.01188409675979,1000,
+c_no_label,consistency,nn_dist_real_real,37.089182295203884,2158,reference
+c_no_label,consistency,classifier_fid,63.42463661192136,1000,Fréchet distance in 768-d classifier features (lower better)
+c_no_hr,consistency,label_tpr_macro,0.25379786808875066,500,"per-class TPR at 0.5 (macro): {'NORM': 0.085, 'MI': 0.464, 'STTC': 0.605, 'CD': 0.115, 'HYP': 0.0}"
+c_no_hr,consistency,label_tnr_macro,0.8084742381099088,500,
+c_no_hr,consistency,lead_residual_mean,0.2564630060114737,500,"affine residual of III/aVR/aVL/aVF given I,II"
+c_no_hr,consistency,lead_residual_wasserstein,0.25154229228733127,500,vs real test residual distribution
+c_no_hr,consistency,coverage,0.7706209453197405,1000,k-NN coverage of real manifold
+c_no_hr,consistency,precision_knn,0.978,1000,fraction inside real manifold (95th pct)
+c_no_hr,consistency,nn_dist_synth_real,36.49392069326399,1000,
+c_no_hr,consistency,nn_dist_real_real,37.089182295203884,2158,reference
+c_no_hr,consistency,classifier_fid,61.894016640868806,1000,Fréchet distance in 768-d classifier features (lower better)
+c_label_noise,consistency,hr_mae,20.73230518338148,497,detected HR vs requested HR (bpm)
+c_label_noise,consistency,hr_bias,11.488077443649738,497,
+c_label_noise,consistency,hr_pearson,0.3296757037808966,497,
+c_label_noise,consistency,hr_within_5bpm,0.12474849094567404,497,
+c_label_noise,consistency,hr_within_10bpm,0.2716297786720322,497,
+c_label_noise,consistency,label_tpr_macro,0.23376557965512842,500,"per-class TPR at 0.5 (macro): {'NORM': 0.068, 'MI': 0.384, 'STTC': 0.637, 'CD': 0.08, 'HYP': 0.0}"
+c_label_noise,consistency,label_tnr_macro,0.8008792243290316,500,
+c_label_noise,consistency,lead_residual_mean,0.28728322524822986,500,"affine residual of III/aVR/aVL/aVF given I,II"
+c_label_noise,consistency,lead_residual_wasserstein,0.28236251152408753,500,vs real test residual distribution
+c_label_noise,consistency,coverage,0.8767377201112141,1000,k-NN coverage of real manifold
+c_label_noise,consistency,precision_knn,0.919,1000,fraction inside real manifold (95th pct)
+c_label_noise,consistency,nn_dist_synth_real,38.46889644069037,1000,
+c_label_noise,consistency,nn_dist_real_real,37.089182295203884,2158,reference
+c_label_noise,consistency,classifier_fid,55.51903934760885,1000,Fréchet distance in 768-d classifier features (lower better)
+c_label_shuffle,consistency,hr_mae,20.683253340643887,495,detected HR vs requested HR (bpm)
+c_label_shuffle,consistency,hr_bias,12.04821369064561,495,
+c_label_shuffle,consistency,hr_pearson,0.3024476900731416,495,
+c_label_shuffle,consistency,hr_within_5bpm,0.16565656565656567,495,
+c_label_shuffle,consistency,hr_within_10bpm,0.30303030303030304,495,
+c_label_shuffle,consistency,label_tpr_macro,0.20886617063793347,500,"per-class TPR at 0.5 (macro): {'NORM': 0.055, 'MI': 0.336, 'STTC': 0.565, 'CD': 0.088, 'HYP': 0.0}"
+c_label_shuffle,consistency,label_tnr_macro,0.78624924560459,500,
+c_label_shuffle,consistency,lead_residual_mean,0.2930050804313672,500,"affine residual of III/aVR/aVL/aVF given I,II"
+c_label_shuffle,consistency,lead_residual_wasserstein,0.28808436670722487,500,vs real test residual distribution
+c_label_shuffle,consistency,coverage,0.8544949026876738,1000,k-NN coverage of real manifold
+c_label_shuffle,consistency,precision_knn,0.937,1000,fraction inside real manifold (95th pct)
+c_label_shuffle,consistency,nn_dist_synth_real,38.22672228405699,1000,
+c_label_shuffle,consistency,nn_dist_real_real,37.089182295203884,2158,reference
+c_label_shuffle,consistency,classifier_fid,57.060334137649626,1000,Fréchet distance in 768-d classifier features (lower better)
+d_seed42,consistency,lead_residual_mean,0.2553136527640214,500,"affine residual of III/aVR/aVL/aVF given I,II"
+d_seed42,consistency,lead_residual_wasserstein,0.250392939039879,500,vs real test residual distribution
+d_seed42,consistency,coverage,0.0,1000,k-NN coverage of real manifold
+d_seed42,consistency,precision_knn,0.656,1000,fraction inside real manifold (95th pct)
+d_seed42,consistency,nn_dist_synth_real,42.76545223755787,1000,
+d_seed42,consistency,nn_dist_real_real,37.089182295203884,2158,reference
+d_seed42,consistency,classifier_fid,93.42799408808115,1000,Fréchet distance in 768-d classifier features (lower better)
+d_seed43,consistency,lead_residual_mean,0.33269339382383273,500,"affine residual of III/aVR/aVL/aVF given I,II"
+d_seed43,consistency,lead_residual_wasserstein,0.32777268009969035,500,vs real test residual distribution
+d_seed43,consistency,coverage,0.0,1000,k-NN coverage of real manifold
+d_seed43,consistency,precision_knn,0.557,1000,fraction inside real manifold (95th pct)
+d_seed43,consistency,nn_dist_synth_real,51.407407877422244,1000,
+d_seed43,consistency,nn_dist_real_real,37.089182295203884,2158,reference
+d_seed43,consistency,classifier_fid,60.880500464758455,1000,Fréchet distance in 768-d classifier features (lower better)
+d_seed44,consistency,lead_residual_mean,0.30721987702564163,500,"affine residual of III/aVR/aVL/aVF given I,II"
+d_seed44,consistency,lead_residual_wasserstein,0.30229916330149925,500,vs real test residual distribution
+d_seed44,consistency,coverage,0.0,1000,k-NN coverage of real manifold
+d_seed44,consistency,precision_knn,0.881,1000,fraction inside real manifold (95th pct)
+d_seed44,consistency,nn_dist_synth_real,38.89765377715156,1000,
+d_seed44,consistency,nn_dist_real_real,37.089182295203884,2158,reference
+d_seed44,consistency,classifier_fid,64.941494480166,1000,Fréchet distance in 768-d classifier features (lower better)
+b_cond_v2,consistency,label_tpr_macro,0.2332689427299397,500,"per-class TPR at 0.5 (macro): {'NORM': 0.017, 'MI': 0.36, 'STTC': 0.71, 'CD': 0.08, 'HYP': 0.0}"
+b_cond_v2,consistency,label_tnr_macro,0.7967334791813837,500,
+b_cond_v2,consistency,lead_residual_mean,0.3475269517768098,500,"affine residual of III/aVR/aVL/aVF given I,II"
+b_cond_v2,consistency,lead_residual_wasserstein,0.34260623805266754,500,vs real test residual distribution
+b_cond_v2,consistency,coverage,0.6774791473586654,1000,k-NN coverage of real manifold
+b_cond_v2,consistency,precision_knn,0.981,1000,fraction inside real manifold (95th pct)
+b_cond_v2,consistency,nn_dist_synth_real,35.57566217396357,1000,
+b_cond_v2,consistency,nn_dist_real_real,37.089182295203884,2158,reference
+b_cond_v2,consistency,classifier_fid,77.1395211859821,1000,Fréchet distance in 768-d classifier features (lower better)
+c_full_v2,consistency,hr_mae,17.06733547488099,499,detected HR vs requested HR (bpm)
+c_full_v2,consistency,hr_bias,8.368865356856308,499,
+c_full_v2,consistency,hr_pearson,0.4008225484293703,499,
+c_full_v2,consistency,hr_within_5bpm,0.18637274549098196,499,
+c_full_v2,consistency,hr_within_10bpm,0.374749498997996,499,
+c_full_v2,consistency,label_tpr_macro,0.26495976093439666,500,"per-class TPR at 0.5 (macro): {'NORM': 0.047, 'MI': 0.6, 'STTC': 0.581, 'CD': 0.097, 'HYP': 0.0}"
+c_full_v2,consistency,label_tnr_macro,0.8204101160041783,500,
+c_full_v2,consistency,lead_residual_mean,0.35006727919894154,500,"affine residual of III/aVR/aVL/aVF given I,II"
+c_full_v2,consistency,lead_residual_wasserstein,0.34514656547479916,500,vs real test residual distribution
+c_full_v2,consistency,coverage,0.8322520852641334,1000,k-NN coverage of real manifold
+c_full_v2,consistency,precision_knn,0.932,1000,fraction inside real manifold (95th pct)
+c_full_v2,consistency,nn_dist_synth_real,37.15251777522214,1000,
+c_full_v2,consistency,nn_dist_real_real,37.089182295203884,2158,reference
+c_full_v2,consistency,classifier_fid,72.57783702863426,1000,Fréchet distance in 768-d classifier features (lower better)
+c_nle_v2,consistency,hr_mae,21.58018841565135,498,detected HR vs requested HR (bpm)
+c_nle_v2,consistency,hr_bias,10.830607286407586,498,
+c_nle_v2,consistency,hr_pearson,0.1627387247805839,498,
+c_nle_v2,consistency,hr_within_5bpm,0.15060240963855423,498,
+c_nle_v2,consistency,hr_within_10bpm,0.28313253012048195,498,
+c_nle_v2,consistency,label_tpr_macro,0.23760645525719598,500,"per-class TPR at 0.5 (macro): {'NORM': 0.034, 'MI': 0.392, 'STTC': 0.718, 'CD': 0.044, 'HYP': 0.0}"
+c_nle_v2,consistency,label_tnr_macro,0.7940581537462513,500,
+c_nle_v2,consistency,lead_residual_mean,0.3636787569293186,500,"affine residual of III/aVR/aVL/aVF given I,II"
+c_nle_v2,consistency,lead_residual_wasserstein,0.3587580432051762,500,vs real test residual distribution
+c_nle_v2,consistency,coverage,0.6320667284522706,1000,k-NN coverage of real manifold
+c_nle_v2,consistency,precision_knn,0.966,1000,fraction inside real manifold (95th pct)
+c_nle_v2,consistency,nn_dist_synth_real,35.88543476689863,1000,
+c_nle_v2,consistency,nn_dist_real_real,37.089182295203884,2158,reference
+c_nle_v2,consistency,classifier_fid,78.352467319036,1000,Fréchet distance in 768-d classifier features (lower better)
+c_mask_v2,consistency,hr_mae,21.560322857838234,500,detected HR vs requested HR (bpm)
+c_mask_v2,consistency,hr_bias,16.395509556626152,500,
+c_mask_v2,consistency,hr_pearson,0.36346586753408106,500,
+c_mask_v2,consistency,hr_within_5bpm,0.142,500,
+c_mask_v2,consistency,hr_within_10bpm,0.278,500,
+c_mask_v2,consistency,label_tpr_macro,0.2983494658074234,500,"per-class TPR at 0.5 (macro): {'NORM': 0.077, 'MI': 0.592, 'STTC': 0.726, 'CD': 0.097, 'HYP': 0.0}"
+c_mask_v2,consistency,label_tnr_macro,0.8135359063170048,500,
+c_mask_v2,consistency,lead_residual_mean,0.32076230062136085,500,"affine residual of III/aVR/aVL/aVF given I,II"
+c_mask_v2,consistency,lead_residual_wasserstein,0.3158415868972186,500,vs real test residual distribution
+c_mask_v2,consistency,coverage,0.47914735866543096,1000,k-NN coverage of real manifold
+c_mask_v2,consistency,precision_knn,0.99,1000,fraction inside real manifold (95th pct)
+c_mask_v2,consistency,nn_dist_synth_real,30.434579844397533,1000,
+c_mask_v2,consistency,nn_dist_real_real,37.089182295203884,2158,reference
+c_mask_v2,consistency,classifier_fid,162.44447208356738,1000,Fréchet distance in 768-d classifier features (lower better)
+c_aux05_v2,consistency,hr_mae,18.93499675666888,500,detected HR vs requested HR (bpm)
+c_aux05_v2,consistency,hr_bias,13.759240101724274,500,
+c_aux05_v2,consistency,hr_pearson,0.3934462494975974,500,
+c_aux05_v2,consistency,hr_within_5bpm,0.182,500,
+c_aux05_v2,consistency,hr_within_10bpm,0.342,500,
+c_aux05_v2,consistency,label_tpr_macro,0.27713282596680056,500,"per-class TPR at 0.5 (macro): {'NORM': 0.038, 'MI': 0.608, 'STTC': 0.677, 'CD': 0.062, 'HYP': 0.0}"
+c_aux05_v2,consistency,label_tnr_macro,0.8207606355489581,500,
+c_aux05_v2,consistency,lead_residual_mean,0.4160023366735794,500,"affine residual of III/aVR/aVL/aVF given I,II"
+c_aux05_v2,consistency,lead_residual_wasserstein,0.41108162294943706,500,vs real test residual distribution
+c_aux05_v2,consistency,coverage,0.7451343836886005,1000,k-NN coverage of real manifold
+c_aux05_v2,consistency,precision_knn,0.979,1000,fraction inside real manifold (95th pct)
+c_aux05_v2,consistency,nn_dist_synth_real,35.7146251417553,1000,
+c_aux05_v2,consistency,nn_dist_real_real,37.089182295203884,2158,reference
+c_aux05_v2,consistency,classifier_fid,73.92457441550653,1000,Fréchet distance in 768-d classifier features (lower better)

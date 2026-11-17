@@ -1,0 +1,132 @@
+{
+  "seed": 42,
+  "fs": 100,
+  "n_leads": 12,
+  "n_samples": 1000,
+  "lead_names": [
+    "I",
+    "II",
+    "III",
+    "aVR",
+    "aVL",
+    "aVF",
+    "V1",
+    "V2",
+    "V3",
+    "V4",
+    "V5",
+    "V6"
+  ],
+  "lead_ii_index": 1,
+  "superclasses": [
+    "NORM",
+    "MI",
+    "STTC",
+    "CD",
+    "HYP"
+  ],
+  "folds": {
+    "train": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "val": [
+      9
+    ],
+    "test": [
+      10
+    ]
+  },
+  "preprocess": {
+    "bandpass_hz": [
+      0.5,
+      40.0
+    ],
+    "bandpass_order": 3,
+    "notch_hz": 50.0,
+    "notch_q": 30.0,
+    "notch_min_fs": 105.0,
+    "hr_bandpass_hz": [
+      5.0,
+      20.0
+    ],
+    "hr_min_bpm": 30.0,
+    "hr_max_bpm": 220.0,
+    "mitbih_fs": 360,
+    "mitbih_normal_symbol": "N",
+    "mitbih_beat_pre_s": 0.35,
+    "mitbih_beat_post_s": 0.75,
+    "reference_beats_per_domain": 1000
+  },
+  "generation": {
+    "n_conditional": 500,
+    "n_unconditional": 1000,
+    "ddim_steps": 50,
+    "ddpm_train_steps": 1000
+  },
+  "classifier": {
+    "arch": "resnet1d",
+    "base_channels": 32,
+    "epochs": 40,
+    "batch_size": 64,
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "val_metric": "macro_f1",
+    "patience": 10
+  },
+  "route_b": {
+    "base_channels": 32,
+    "n_res_blocks": 4,
+    "attention_levels": [
+      "low"
+    ],
+    "epochs": 100,
+    "batch_size": 128,
+    "lr": 0.0002,
+    "amp": true,
+    "ckpt_every_epochs": 1,
+    "milestone_eval_every": 20
+  },
+  "route_c": {
+    "epochs": 100,
+    "batch_size": 128,
+    "lr": 0.0002,
+    "cond_dropout_prob": 0.15,
+    "hr_encoder_hidden": 64,
+    "label_embed_dim": 64
+  },
+  "route_d": {
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "epochs": 100,
+    "batch_size": 128,
+    "lr_g": 0.0002,
+    "lr_d": 0.0002,
+    "n_critic": 1
+  },
+  "eval": {
+    "morphology_metrics": [
+      "mmd",
+      "dtw",
+      "psd",
+      "prd"
+    ],
+    "regularity_params": [
+      "QT",
+      "PR",
+      "QRS"
+    ],
+    "regularity_extra": "RR_cv",
+    "wasserstein_metric": "wasserstein",
+    "ks_alpha": 0.05
+  }
+}
